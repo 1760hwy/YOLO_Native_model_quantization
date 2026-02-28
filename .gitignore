@@ -1,0 +1,58 @@
+# Training outputs
+results/
+runs/
+weights/
+*.pt
+*.pth
+
+# ONNX models
+*.onnx
+
+# Quantized models
+*.bin
+model_output/
+
+# Calibration data (too large for git)
+calibration_f32/
+calibration_data/
+*.f32
+
+# Dataset (too large for git)
+dataset/
+images/
+labels/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+wandb/
+mlruns/
+
+# Docker
+.docker/

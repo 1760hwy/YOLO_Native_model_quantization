@@ -1,0 +1,35 @@
+# forestfire.yaml
+# =============================================
+# Dataset Configuration for Fire Detection
+# =============================================
+#
+# Directory structure:
+#   dataset/
+#   ├── images/
+#   │   ├── train/
+#   │   │   ├── img001.jpg
+#   │   │   └── ...
+#   │   └── val/
+#   │       ├── img001.jpg
+#   │       └── ...
+#   └── labels/
+#       ├── train/
+#       │   ├── img001.txt    # Each line: class_id cx cy w h (normalized)
+#       │   └── ...
+#       └── val/
+#           ├── img001.txt
+#           └── ...
+#
+# Label format (YOLO format):
+#   Each .txt file has one line per object:
+#   <class_id> <center_x> <center_y> <width> <height>
+#   All values normalized to 0~1 relative to image dimensions.
+#   Example: 0 0.512 0.341 0.15 0.22
+
+# ★ Change this to YOUR dataset path
+path: D:/LW/forestfire_yolo11/dataset
+train: images/train
+val: images/val
+
+nc: 1          # Number of classes
+names: ['fire'] # Class names
