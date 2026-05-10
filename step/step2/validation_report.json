@@ -1,0 +1,1357 @@
+{
+  "model": "C:\\e\\workspace\\experiment\\EI_yolo\\step\\step1\\best.onnx",
+  "onnxruntime_version": "1.24.4",
+  "execution_provider": "CPUExecutionProvider",
+  "imgsz": 640,
+  "conf_thres": 0.25,
+  "iou_thres": 0.45,
+  "classes": [
+    "fire"
+  ],
+  "total_images": 50,
+  "successful": 50,
+  "failed": 0,
+  "total_detections": 78,
+  "avg_infer_ms": 36.89,
+  "est_fps": 27.1,
+  "source_stats": {
+    "BoWFire_test": {
+      "count": 20,
+      "detections": 40,
+      "images_with_det": 20
+    },
+    "DFS_valid": {
+      "count": 20,
+      "detections": 30,
+      "images_with_det": 19
+    },
+    "DJI_drone": {
+      "count": 10,
+      "detections": 8,
+      "images_with_det": 8
+    }
+  },
+  "per_image": [
+    {
+      "idx": 1,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (32).png",
+      "orig_size": [
+        768,
+        1024
+      ],
+      "n_detections": 3,
+      "infer_ms": 42.87,
+      "detections": [
+        {
+          "x1": 204.2427978515625,
+          "y1": 315.6816101074219,
+          "x2": 282.32293701171875,
+          "y2": 403.13543701171875,
+          "conf": 0.5479251146316528,
+          "class": "fire"
+        },
+        {
+          "x1": 127.1953125,
+          "y1": 321.484619140625,
+          "x2": 169.91322326660156,
+          "y2": 362.3016052246094,
+          "conf": 0.47314760088920593,
+          "class": "fire"
+        },
+        {
+          "x1": 119.86793518066406,
+          "y1": 310.29327392578125,
+          "x2": 285.2154235839844,
+          "y2": 402.8850402832031,
+          "conf": 0.29960161447525024,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "001_BoWFire_test_BoWFire_test_BoWFireDataset (32)_vis.jpg"
+    },
+    {
+      "idx": 2,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (170).png",
+      "orig_size": [
+        1024,
+        681
+      ],
+      "n_detections": 2,
+      "infer_ms": 39.51,
+      "detections": [
+        {
+          "x1": 107.05378723144531,
+          "y1": 245.70233154296875,
+          "x2": 490.4174499511719,
+          "y2": 428.2289123535156,
+          "conf": 0.7119575142860413,
+          "class": "fire"
+        },
+        {
+          "x1": 563.7313842773438,
+          "y1": 327.355224609375,
+          "x2": 640.0119018554688,
+          "y2": 426.7396240234375,
+          "conf": 0.5857169032096863,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "002_BoWFire_test_BoWFire_test_BoWFireDataset (170)_vis.jpg"
+    },
+    {
+      "idx": 3,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (12).png",
+      "orig_size": [
+        1024,
+        733
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.38,
+      "detections": [
+        {
+          "x1": 345.8666076660156,
+          "y1": 154.70481872558594,
+          "x2": 514.7620239257812,
+          "y2": 388.72216796875,
+          "conf": 0.8613696098327637,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "003_BoWFire_test_BoWFire_test_BoWFireDataset (12)_vis.jpg"
+    },
+    {
+      "idx": 4,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (187).png",
+      "orig_size": [
+        1024,
+        768
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.17,
+      "detections": [
+        {
+          "x1": 16.881927490234375,
+          "y1": 86.95909118652344,
+          "x2": 613.4127197265625,
+          "y2": 518.1651611328125,
+          "conf": 0.865203320980072,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "004_BoWFire_test_BoWFire_test_BoWFireDataset (187)_vis.jpg"
+    },
+    {
+      "idx": 5,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (180).png",
+      "orig_size": [
+        1024,
+        680
+      ],
+      "n_detections": 6,
+      "infer_ms": 34.48,
+      "detections": [
+        {
+          "x1": 125.75505065917969,
+          "y1": 383.452880859375,
+          "x2": 387.6270751953125,
+          "y2": 463.4902038574219,
+          "conf": 0.6700856685638428,
+          "class": "fire"
+        },
+        {
+          "x1": 127.78639221191406,
+          "y1": 208.57872009277344,
+          "x2": 217.40736389160156,
+          "y2": 276.0731506347656,
+          "conf": 0.5843552947044373,
+          "class": "fire"
+        },
+        {
+          "x1": 261.845458984375,
+          "y1": 286.5569763183594,
+          "x2": 334.3739929199219,
+          "y2": 346.3210144042969,
+          "conf": 0.4412343502044678,
+          "class": "fire"
+        },
+        {
+          "x1": 216.78131103515625,
+          "y1": 263.45635986328125,
+          "x2": 258.17645263671875,
+          "y2": 288.0327453613281,
+          "conf": 0.3382803797721863,
+          "class": "fire"
+        },
+        {
+          "x1": 67.15025329589844,
+          "y1": 438.020751953125,
+          "x2": 103.58076477050781,
+          "y2": 466.29315185546875,
+          "conf": 0.3188759982585907,
+          "class": "fire"
+        },
+        {
+          "x1": 0.5770626068115234,
+          "y1": 448.640625,
+          "x2": 33.21637725830078,
+          "y2": 482.9695129394531,
+          "conf": 0.29912424087524414,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "005_BoWFire_test_BoWFire_test_BoWFireDataset (180)_vis.jpg"
+    },
+    {
+      "idx": 6,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (44).png",
+      "orig_size": [
+        634,
+        475
+      ],
+      "n_detections": 2,
+      "infer_ms": 32.59,
+      "detections": [
+        {
+          "x1": 106.34158325195312,
+          "y1": 202.8311309814453,
+          "x2": 221.0425567626953,
+          "y2": 447.9521179199219,
+          "conf": 0.6976432204246521,
+          "class": "fire"
+        },
+        {
+          "x1": 264.2911071777344,
+          "y1": 350.9638977050781,
+          "x2": 294.16107177734375,
+          "y2": 397.55615234375,
+          "conf": 0.5272706151008606,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "006_BoWFire_test_BoWFire_test_BoWFireDataset (44)_vis.jpg"
+    },
+    {
+      "idx": 7,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (175).png",
+      "orig_size": [
+        1024,
+        802
+      ],
+      "n_detections": 1,
+      "infer_ms": 34.31,
+      "detections": [
+        {
+          "x1": 417.25006103515625,
+          "y1": 116.53773498535156,
+          "x2": 637.6858520507812,
+          "y2": 533.1619873046875,
+          "conf": 0.8190731406211853,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "007_BoWFire_test_BoWFire_test_BoWFireDataset (175)_vis.jpg"
+    },
+    {
+      "idx": 8,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (4).png",
+      "orig_size": [
+        1024,
+        683
+      ],
+      "n_detections": 1,
+      "infer_ms": 33.85,
+      "detections": [
+        {
+          "x1": 215.3282470703125,
+          "y1": 158.76223754882812,
+          "x2": 355.1815185546875,
+          "y2": 351.22320556640625,
+          "conf": 0.823460042476654,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "008_BoWFire_test_BoWFire_test_BoWFireDataset (4)_vis.jpg"
+    },
+    {
+      "idx": 9,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (161).png",
+      "orig_size": [
+        480,
+        360
+      ],
+      "n_detections": 3,
+      "infer_ms": 33.53,
+      "detections": [
+        {
+          "x1": 462.2959289550781,
+          "y1": 132.62469482421875,
+          "x2": 611.4661254882812,
+          "y2": 421.62725830078125,
+          "conf": 0.7763458490371704,
+          "class": "fire"
+        },
+        {
+          "x1": 257.4674987792969,
+          "y1": 185.3716278076172,
+          "x2": 400.87054443359375,
+          "y2": 320.62255859375,
+          "conf": 0.5299990773200989,
+          "class": "fire"
+        },
+        {
+          "x1": 86.1045913696289,
+          "y1": 209.4681854248047,
+          "x2": 129.00799560546875,
+          "y2": 335.88226318359375,
+          "conf": 0.47232940793037415,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "009_BoWFire_test_BoWFire_test_BoWFireDataset (161)_vis.jpg"
+    },
+    {
+      "idx": 10,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (201).png",
+      "orig_size": [
+        1024,
+        768
+      ],
+      "n_detections": 1,
+      "infer_ms": 36.45,
+      "detections": [
+        {
+          "x1": 15.579391479492188,
+          "y1": 308.5238037109375,
+          "x2": 395.7216491699219,
+          "y2": 391.72552490234375,
+          "conf": 0.7258079648017883,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "010_BoWFire_test_BoWFire_test_BoWFireDataset (201)_vis.jpg"
+    },
+    {
+      "idx": 11,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (38).png",
+      "orig_size": [
+        1365,
+        1024
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.0,
+      "detections": [
+        {
+          "x1": 205.17581176757812,
+          "y1": 273.6300964355469,
+          "x2": 364.0743713378906,
+          "y2": 396.1192626953125,
+          "conf": 0.6879303455352783,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "011_BoWFire_test_BoWFire_test_BoWFireDataset (38)_vis.jpg"
+    },
+    {
+      "idx": 12,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (203).png",
+      "orig_size": [
+        1024,
+        768
+      ],
+      "n_detections": 1,
+      "infer_ms": 41.15,
+      "detections": [
+        {
+          "x1": 487.2051696777344,
+          "y1": 206.51528930664062,
+          "x2": 632.826171875,
+          "y2": 243.0950927734375,
+          "conf": 0.37554019689559937,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "012_BoWFire_test_BoWFire_test_BoWFireDataset (203)_vis.jpg"
+    },
+    {
+      "idx": 13,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (157).png",
+      "orig_size": [
+        800,
+        450
+      ],
+      "n_detections": 2,
+      "infer_ms": 34.39,
+      "detections": [
+        {
+          "x1": 181.2833251953125,
+          "y1": 303.6898498535156,
+          "x2": 269.80413818359375,
+          "y2": 383.7287902832031,
+          "conf": 0.8102539777755737,
+          "class": "fire"
+        },
+        {
+          "x1": 313.5909118652344,
+          "y1": 324.6669616699219,
+          "x2": 403.6226806640625,
+          "y2": 417.03778076171875,
+          "conf": 0.6705363392829895,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "013_BoWFire_test_BoWFire_test_BoWFireDataset (157)_vis.jpg"
+    },
+    {
+      "idx": 14,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (217).png",
+      "orig_size": [
+        800,
+        533
+      ],
+      "n_detections": 1,
+      "infer_ms": 36.2,
+      "detections": [
+        {
+          "x1": 68.78939819335938,
+          "y1": 123.43309020996094,
+          "x2": 564.4821166992188,
+          "y2": 511.5773620605469,
+          "conf": 0.8348116278648376,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "014_BoWFire_test_BoWFire_test_BoWFireDataset (217)_vis.jpg"
+    },
+    {
+      "idx": 15,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (194).png",
+      "orig_size": [
+        1024,
+        683
+      ],
+      "n_detections": 4,
+      "infer_ms": 45.48,
+      "detections": [
+        {
+          "x1": 31.314056396484375,
+          "y1": 152.2767333984375,
+          "x2": 640.0209350585938,
+          "y2": 459.3860778808594,
+          "conf": 0.44499197602272034,
+          "class": "fire"
+        },
+        {
+          "x1": 322.96942138671875,
+          "y1": 230.20960998535156,
+          "x2": 640.744873046875,
+          "y2": 374.08502197265625,
+          "conf": 0.4175249934196472,
+          "class": "fire"
+        },
+        {
+          "x1": 86.4266128540039,
+          "y1": 311.91766357421875,
+          "x2": 138.6720428466797,
+          "y2": 383.37689208984375,
+          "conf": 0.35576844215393066,
+          "class": "fire"
+        },
+        {
+          "x1": 246.42913818359375,
+          "y1": 348.16162109375,
+          "x2": 282.59088134765625,
+          "y2": 410.9948425292969,
+          "conf": 0.3246716558933258,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "015_BoWFire_test_BoWFire_test_BoWFireDataset (194)_vis.jpg"
+    },
+    {
+      "idx": 16,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (35).png",
+      "orig_size": [
+        1365,
+        1024
+      ],
+      "n_detections": 1,
+      "infer_ms": 37.28,
+      "detections": [
+        {
+          "x1": 234.7821502685547,
+          "y1": 247.27203369140625,
+          "x2": 428.9044189453125,
+          "y2": 359.03472900390625,
+          "conf": 0.7569325566291809,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "016_BoWFire_test_BoWFire_test_BoWFireDataset (35)_vis.jpg"
+    },
+    {
+      "idx": 17,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (204).png",
+      "orig_size": [
+        1024,
+        768
+      ],
+      "n_detections": 4,
+      "infer_ms": 34.43,
+      "detections": [
+        {
+          "x1": 517.76708984375,
+          "y1": 329.6899719238281,
+          "x2": 572.7958984375,
+          "y2": 374.3789367675781,
+          "conf": 0.5840614438056946,
+          "class": "fire"
+        },
+        {
+          "x1": 164.9045867919922,
+          "y1": 268.5375671386719,
+          "x2": 382.0650329589844,
+          "y2": 379.9603576660156,
+          "conf": 0.46885356307029724,
+          "class": "fire"
+        },
+        {
+          "x1": 418.8800964355469,
+          "y1": 325.2388610839844,
+          "x2": 498.31396484375,
+          "y2": 374.4974365234375,
+          "conf": 0.4314112961292267,
+          "class": "fire"
+        },
+        {
+          "x1": 162.1485595703125,
+          "y1": 273.0668029785156,
+          "x2": 632.4824829101562,
+          "y2": 386.3002014160156,
+          "conf": 0.4080512523651123,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "017_BoWFire_test_BoWFire_test_BoWFireDataset (204)_vis.jpg"
+    },
+    {
+      "idx": 18,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (192).png",
+      "orig_size": [
+        1024,
+        768
+      ],
+      "n_detections": 1,
+      "infer_ms": 36.09,
+      "detections": [
+        {
+          "x1": 3.900787353515625,
+          "y1": 266.0531005859375,
+          "x2": 638.8167724609375,
+          "y2": 521.11328125,
+          "conf": 0.7579038739204407,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "018_BoWFire_test_BoWFire_test_BoWFireDataset (192)_vis.jpg"
+    },
+    {
+      "idx": 19,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (176).png",
+      "orig_size": [
+        1024,
+        680
+      ],
+      "n_detections": 1,
+      "infer_ms": 36.5,
+      "detections": [
+        {
+          "x1": 169.08193969726562,
+          "y1": 240.89254760742188,
+          "x2": 410.4002380371094,
+          "y2": 409.6058654785156,
+          "conf": 0.8555548191070557,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "019_BoWFire_test_BoWFire_test_BoWFireDataset (176)_vis.jpg"
+    },
+    {
+      "idx": 20,
+      "source": "BoWFire_test",
+      "file": "BoWFire_test_BoWFireDataset (179).png",
+      "orig_size": [
+        1024,
+        695
+      ],
+      "n_detections": 3,
+      "infer_ms": 37.56,
+      "detections": [
+        {
+          "x1": 431.5470886230469,
+          "y1": 308.559814453125,
+          "x2": 537.812744140625,
+          "y2": 426.53955078125,
+          "conf": 0.6526589393615723,
+          "class": "fire"
+        },
+        {
+          "x1": 10.04925537109375,
+          "y1": 281.7567138671875,
+          "x2": 644.4608154296875,
+          "y2": 513.2130737304688,
+          "conf": 0.6175859570503235,
+          "class": "fire"
+        },
+        {
+          "x1": 192.55374145507812,
+          "y1": 284.42657470703125,
+          "x2": 407.78314208984375,
+          "y2": 378.365966796875,
+          "conf": 0.28237658739089966,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "020_BoWFire_test_BoWFire_test_BoWFireDataset (179)_vis.jpg"
+    },
+    {
+      "idx": 21,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(4460).jpg",
+      "orig_size": [
+        480,
+        360
+      ],
+      "n_detections": 1,
+      "infer_ms": 38.84,
+      "detections": [
+        {
+          "x1": 378.83203125,
+          "y1": 295.8895263671875,
+          "x2": 512.4097290039062,
+          "y2": 488.9123229980469,
+          "conf": 0.7824270725250244,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "021_DFS_valid_DFS_valid_middle_(4460)_vis.jpg"
+    },
+    {
+      "idx": 22,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(2949).jpg",
+      "orig_size": [
+        580,
+        326
+      ],
+      "n_detections": 3,
+      "infer_ms": 34.28,
+      "detections": [
+        {
+          "x1": 165.5197296142578,
+          "y1": 258.6156005859375,
+          "x2": 246.81939697265625,
+          "y2": 335.2982482910156,
+          "conf": 0.565235435962677,
+          "class": "fire"
+        },
+        {
+          "x1": 372.95489501953125,
+          "y1": 304.3671569824219,
+          "x2": 599.697021484375,
+          "y2": 415.246826171875,
+          "conf": 0.4496558606624603,
+          "class": "fire"
+        },
+        {
+          "x1": 389.46502685546875,
+          "y1": 311.95062255859375,
+          "x2": 462.4350280761719,
+          "y2": 376.7406921386719,
+          "conf": 0.4253341257572174,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "022_DFS_valid_DFS_valid_middle_(2949)_vis.jpg"
+    },
+    {
+      "idx": 23,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(179).jpg",
+      "orig_size": [
+        352,
+        288
+      ],
+      "n_detections": 1,
+      "infer_ms": 36.38,
+      "detections": [
+        {
+          "x1": 6.582557678222656,
+          "y1": 426.2062072753906,
+          "x2": 215.84805297851562,
+          "y2": 576.7884521484375,
+          "conf": 0.3861369788646698,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "023_DFS_valid_DFS_valid_middle_(179)_vis.jpg"
+    },
+    {
+      "idx": 24,
+      "source": "DFS_valid",
+      "file": "DFS_valid_large_(3020).jpg",
+      "orig_size": [
+        183,
+        275
+      ],
+      "n_detections": 1,
+      "infer_ms": 37.65,
+      "detections": [
+        {
+          "x1": 109.43537902832031,
+          "y1": 1.2836761474609375,
+          "x2": 525.5045776367188,
+          "y2": 327.6279296875,
+          "conf": 0.8214311003684998,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "024_DFS_valid_DFS_valid_large_(3020)_vis.jpg"
+    },
+    {
+      "idx": 25,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(205).jpg",
+      "orig_size": [
+        778,
+        436
+      ],
+      "n_detections": 3,
+      "infer_ms": 34.95,
+      "detections": [
+        {
+          "x1": 219.94607543945312,
+          "y1": 292.0427551269531,
+          "x2": 294.41400146484375,
+          "y2": 349.1427917480469,
+          "conf": 0.4417349696159363,
+          "class": "fire"
+        },
+        {
+          "x1": 189.04708862304688,
+          "y1": 284.65472412109375,
+          "x2": 552.453125,
+          "y2": 472.32330322265625,
+          "conf": 0.352690726518631,
+          "class": "fire"
+        },
+        {
+          "x1": 338.3211364746094,
+          "y1": 388.2830810546875,
+          "x2": 436.1311950683594,
+          "y2": 440.11029052734375,
+          "conf": 0.2633233666419983,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "025_DFS_valid_DFS_valid_middle_(205)_vis.jpg"
+    },
+    {
+      "idx": 26,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(339).jpg",
+      "orig_size": [
+        276,
+        183
+      ],
+      "n_detections": 2,
+      "infer_ms": 34.37,
+      "detections": [
+        {
+          "x1": 100.22860717773438,
+          "y1": 178.85824584960938,
+          "x2": 402.8738708496094,
+          "y2": 440.593994140625,
+          "conf": 0.7660931348800659,
+          "class": "fire"
+        },
+        {
+          "x1": 104.04930877685547,
+          "y1": 186.19515991210938,
+          "x2": 251.24989318847656,
+          "y2": 332.9981689453125,
+          "conf": 0.2815946042537689,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "026_DFS_valid_DFS_valid_middle_(339)_vis.jpg"
+    },
+    {
+      "idx": 27,
+      "source": "DFS_valid",
+      "file": "DFS_valid_large_(530).jpg",
+      "orig_size": [
+        550,
+        352
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.15,
+      "detections": [
+        {
+          "x1": 83.10157775878906,
+          "y1": 187.36231994628906,
+          "x2": 468.2303466796875,
+          "y2": 502.79266357421875,
+          "conf": 0.8254935145378113,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "027_DFS_valid_DFS_valid_large_(530)_vis.jpg"
+    },
+    {
+      "idx": 28,
+      "source": "DFS_valid",
+      "file": "DFS_valid_other_(265).jpg",
+      "orig_size": [
+        400,
+        300
+      ],
+      "n_detections": 1,
+      "infer_ms": 36.95,
+      "detections": [
+        {
+          "x1": 218.1202392578125,
+          "y1": 140.5821075439453,
+          "x2": 386.95758056640625,
+          "y2": 305.2980041503906,
+          "conf": 0.8291839957237244,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "028_DFS_valid_DFS_valid_other_(265)_vis.jpg"
+    },
+    {
+      "idx": 29,
+      "source": "DFS_valid",
+      "file": "DFS_valid_other_(838).jpg",
+      "orig_size": [
+        500,
+        355
+      ],
+      "n_detections": 2,
+      "infer_ms": 39.82,
+      "detections": [
+        {
+          "x1": 341.7183532714844,
+          "y1": 196.30007934570312,
+          "x2": 404.71319580078125,
+          "y2": 307.2917785644531,
+          "conf": 0.5268402695655823,
+          "class": "fire"
+        },
+        {
+          "x1": 330.741943359375,
+          "y1": 387.2821044921875,
+          "x2": 366.12872314453125,
+          "y2": 441.1917419433594,
+          "conf": 0.39452415704727173,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "029_DFS_valid_DFS_valid_other_(838)_vis.jpg"
+    },
+    {
+      "idx": 30,
+      "source": "DFS_valid",
+      "file": "DFS_valid_large_(1042).jpg",
+      "orig_size": [
+        240,
+        160
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.32,
+      "detections": [
+        {
+          "x1": 6.260711669921875,
+          "y1": 107.59367370605469,
+          "x2": 637.8837890625,
+          "y2": 515.2100830078125,
+          "conf": 0.8709650039672852,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "030_DFS_valid_DFS_valid_large_(1042)_vis.jpg"
+    },
+    {
+      "idx": 31,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(704).jpg",
+      "orig_size": [
+        360,
+        603
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.3,
+      "detections": [
+        {
+          "x1": 231.89254760742188,
+          "y1": 71.17192077636719,
+          "x2": 446.1215515136719,
+          "y2": 273.7541809082031,
+          "conf": 0.815462589263916,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "031_DFS_valid_DFS_valid_middle_(704)_vis.jpg"
+    },
+    {
+      "idx": 32,
+      "source": "DFS_valid",
+      "file": "DFS_valid_other_(25).jpg",
+      "orig_size": [
+        500,
+        633
+      ],
+      "n_detections": 0,
+      "infer_ms": 36.78,
+      "detections": [],
+      "vis_file": "032_DFS_valid_DFS_valid_other_(25)_vis.jpg"
+    },
+    {
+      "idx": 33,
+      "source": "DFS_valid",
+      "file": "DFS_valid_large_(2501).jpg",
+      "orig_size": [
+        500,
+        312
+      ],
+      "n_detections": 3,
+      "infer_ms": 39.7,
+      "detections": [
+        {
+          "x1": 349.6915283203125,
+          "y1": 212.05581665039062,
+          "x2": 491.13018798828125,
+          "y2": 433.7998962402344,
+          "conf": 0.8034557104110718,
+          "class": "fire"
+        },
+        {
+          "x1": 176.90982055664062,
+          "y1": 326.09991455078125,
+          "x2": 344.56689453125,
+          "y2": 395.6108703613281,
+          "conf": 0.37528181076049805,
+          "class": "fire"
+        },
+        {
+          "x1": 431.0199279785156,
+          "y1": 397.19696044921875,
+          "x2": 481.5491943359375,
+          "y2": 433.74493408203125,
+          "conf": 0.3169739842414856,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "033_DFS_valid_DFS_valid_large_(2501)_vis.jpg"
+    },
+    {
+      "idx": 34,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(4438).jpg",
+      "orig_size": [
+        480,
+        360
+      ],
+      "n_detections": 2,
+      "infer_ms": 60.71,
+      "detections": [
+        {
+          "x1": 83.76882934570312,
+          "y1": 202.2535858154297,
+          "x2": 321.2504577636719,
+          "y2": 430.0224914550781,
+          "conf": 0.6849524974822998,
+          "class": "fire"
+        },
+        {
+          "x1": 338.64910888671875,
+          "y1": 512.349853515625,
+          "x2": 380.2034912109375,
+          "y2": 541.2164916992188,
+          "conf": 0.3587666153907776,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "034_DFS_valid_DFS_valid_middle_(4438)_vis.jpg"
+    },
+    {
+      "idx": 35,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(1805).jpg",
+      "orig_size": [
+        1024,
+        682
+      ],
+      "n_detections": 1,
+      "infer_ms": 37.74,
+      "detections": [
+        {
+          "x1": 188.94618225097656,
+          "y1": 432.31689453125,
+          "x2": 309.2744445800781,
+          "y2": 525.0572509765625,
+          "conf": 0.7840515375137329,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "035_DFS_valid_DFS_valid_middle_(1805)_vis.jpg"
+    },
+    {
+      "idx": 36,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(1056).jpg",
+      "orig_size": [
+        284,
+        177
+      ],
+      "n_detections": 2,
+      "infer_ms": 47.14,
+      "detections": [
+        {
+          "x1": 248.24395751953125,
+          "y1": 279.935302734375,
+          "x2": 392.9804992675781,
+          "y2": 475.2559814453125,
+          "conf": 0.7943179607391357,
+          "class": "fire"
+        },
+        {
+          "x1": 546.0008544921875,
+          "y1": 394.3082275390625,
+          "x2": 615.59765625,
+          "y2": 462.70794677734375,
+          "conf": 0.35048630833625793,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "036_DFS_valid_DFS_valid_middle_(1056)_vis.jpg"
+    },
+    {
+      "idx": 37,
+      "source": "DFS_valid",
+      "file": "DFS_valid_large_(2475).jpg",
+      "orig_size": [
+        550,
+        413
+      ],
+      "n_detections": 1,
+      "infer_ms": 38.85,
+      "detections": [
+        {
+          "x1": 107.32481384277344,
+          "y1": 133.19656372070312,
+          "x2": 398.0423583984375,
+          "y2": 412.48211669921875,
+          "conf": 0.6928203105926514,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "037_DFS_valid_DFS_valid_large_(2475)_vis.jpg"
+    },
+    {
+      "idx": 38,
+      "source": "DFS_valid",
+      "file": "DFS_valid_large_(2985).jpg",
+      "orig_size": [
+        202,
+        249
+      ],
+      "n_detections": 2,
+      "infer_ms": 34.22,
+      "detections": [
+        {
+          "x1": 300.9244689941406,
+          "y1": 321.1105041503906,
+          "x2": 562.646484375,
+          "y2": 486.73828125,
+          "conf": 0.6748476624488831,
+          "class": "fire"
+        },
+        {
+          "x1": 85.45303344726562,
+          "y1": 381.3529052734375,
+          "x2": 178.50282287597656,
+          "y2": 464.9902648925781,
+          "conf": 0.5298650860786438,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "038_DFS_valid_DFS_valid_large_(2985)_vis.jpg"
+    },
+    {
+      "idx": 39,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(730).jpg",
+      "orig_size": [
+        530,
+        300
+      ],
+      "n_detections": 1,
+      "infer_ms": 36.85,
+      "detections": [
+        {
+          "x1": 153.85610961914062,
+          "y1": 156.4552459716797,
+          "x2": 390.1651611328125,
+          "y2": 346.4913330078125,
+          "conf": 0.7990022301673889,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "039_DFS_valid_DFS_valid_middle_(730)_vis.jpg"
+    },
+    {
+      "idx": 40,
+      "source": "DFS_valid",
+      "file": "DFS_valid_middle_(1033).jpg",
+      "orig_size": [
+        550,
+        417
+      ],
+      "n_detections": 1,
+      "infer_ms": 34.13,
+      "detections": [
+        {
+          "x1": 96.07432556152344,
+          "y1": 270.55096435546875,
+          "x2": 264.1421813964844,
+          "y2": 452.0533447265625,
+          "conf": 0.7089365720748901,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "040_DFS_valid_DFS_valid_middle_(1033)_vis.jpg"
+    },
+    {
+      "idx": 41,
+      "source": "DJI_drone",
+      "file": "DJI_drone_DJI_0470_W_0091.jpg",
+      "orig_size": [
+        3840,
+        2160
+      ],
+      "n_detections": 0,
+      "infer_ms": 32.46,
+      "detections": [],
+      "vis_file": "041_DJI_drone_DJI_drone_DJI_0470_W_0091_vis.jpg"
+    },
+    {
+      "idx": 42,
+      "source": "DJI_drone",
+      "file": "DJI_drone_DJI_0468_W_0203.jpg",
+      "orig_size": [
+        3840,
+        2160
+      ],
+      "n_detections": 1,
+      "infer_ms": 34.07,
+      "detections": [
+        {
+          "x1": 240.4835205078125,
+          "y1": 262.04779052734375,
+          "x2": 256.8074951171875,
+          "y2": 277.82806396484375,
+          "conf": 0.5029027462005615,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "042_DJI_drone_DJI_drone_DJI_0468_W_0203_vis.jpg"
+    },
+    {
+      "idx": 43,
+      "source": "DJI_drone",
+      "file": "DJI_drone_djifly (53)_00015.jpg",
+      "orig_size": [
+        1280,
+        720
+      ],
+      "n_detections": 1,
+      "infer_ms": 34.3,
+      "detections": [
+        {
+          "x1": 287.7878723144531,
+          "y1": 281.2349853515625,
+          "x2": 386.48101806640625,
+          "y2": 360.1656188964844,
+          "conf": 0.8934496641159058,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "043_DJI_drone_DJI_drone_djifly (53)_00015_vis.jpg"
+    },
+    {
+      "idx": 44,
+      "source": "DJI_drone",
+      "file": "DJI_drone_DJI_0470_W_0001.jpg",
+      "orig_size": [
+        3840,
+        2160
+      ],
+      "n_detections": 1,
+      "infer_ms": 32.39,
+      "detections": [
+        {
+          "x1": 194.37982177734375,
+          "y1": 329.4729919433594,
+          "x2": 214.76512145996094,
+          "y2": 346.8873596191406,
+          "conf": 0.3898029625415802,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "044_DJI_drone_DJI_drone_DJI_0470_W_0001_vis.jpg"
+    },
+    {
+      "idx": 45,
+      "source": "DJI_drone",
+      "file": "DJI_drone_djifly (48)_00052.jpg",
+      "orig_size": [
+        1280,
+        720
+      ],
+      "n_detections": 1,
+      "infer_ms": 37.09,
+      "detections": [
+        {
+          "x1": 307.9216613769531,
+          "y1": 270.70147705078125,
+          "x2": 351.87213134765625,
+          "y2": 326.58062744140625,
+          "conf": 0.847757875919342,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "045_DJI_drone_DJI_drone_djifly (48)_00052_vis.jpg"
+    },
+    {
+      "idx": 46,
+      "source": "DJI_drone",
+      "file": "DJI_drone_djifly (44)_00064.jpg",
+      "orig_size": [
+        1280,
+        720
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.25,
+      "detections": [
+        {
+          "x1": 233.25408935546875,
+          "y1": 281.3489685058594,
+          "x2": 368.9519958496094,
+          "y2": 401.2745361328125,
+          "conf": 0.9580608010292053,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "046_DJI_drone_DJI_drone_djifly (44)_00064_vis.jpg"
+    },
+    {
+      "idx": 47,
+      "source": "DJI_drone",
+      "file": "DJI_drone_djifly (33)_00035.jpg",
+      "orig_size": [
+        1280,
+        720
+      ],
+      "n_detections": 0,
+      "infer_ms": 36.31,
+      "detections": [],
+      "vis_file": "047_DJI_drone_DJI_drone_djifly (33)_00035_vis.jpg"
+    },
+    {
+      "idx": 48,
+      "source": "DJI_drone",
+      "file": "DJI_drone_DJI_0424_W_0625.jpg",
+      "orig_size": [
+        1920,
+        1080
+      ],
+      "n_detections": 1,
+      "infer_ms": 38.69,
+      "detections": [
+        {
+          "x1": 361.9081726074219,
+          "y1": 297.21234130859375,
+          "x2": 457.3976745605469,
+          "y2": 360.59918212890625,
+          "conf": 0.8300456404685974,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "048_DJI_drone_DJI_drone_DJI_0424_W_0625_vis.jpg"
+    },
+    {
+      "idx": 49,
+      "source": "DJI_drone",
+      "file": "DJI_drone_djifly (7)_00111.jpg",
+      "orig_size": [
+        960,
+        544
+      ],
+      "n_detections": 1,
+      "infer_ms": 35.64,
+      "detections": [
+        {
+          "x1": 342.59136962890625,
+          "y1": 287.6663818359375,
+          "x2": 375.9288330078125,
+          "y2": 313.7960510253906,
+          "conf": 0.42381957173347473,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "049_DJI_drone_DJI_drone_djifly (7)_00111_vis.jpg"
+    },
+    {
+      "idx": 50,
+      "source": "DJI_drone",
+      "file": "DJI_drone_djifly_00261.jpg",
+      "orig_size": [
+        960,
+        544
+      ],
+      "n_detections": 1,
+      "infer_ms": 30.88,
+      "detections": [
+        {
+          "x1": 368.39361572265625,
+          "y1": 290.5671081542969,
+          "x2": 431.535400390625,
+          "y2": 345.784912109375,
+          "conf": 0.8721209764480591,
+          "class": "fire"
+        }
+      ],
+      "vis_file": "050_DJI_drone_DJI_drone_djifly_00261_vis.jpg"
+    }
+  ]
+}

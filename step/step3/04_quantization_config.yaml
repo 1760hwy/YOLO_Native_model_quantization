@@ -1,0 +1,113 @@
+# ============================================================
+# hb_mapper 量化配置 - RDK X5 火焰检测模型
+# 模型: yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss
+# 目标: bayes-e (RDK X5)
+# 工具: OpenExplorer v1.2.8 / hb_mapper 1.24.3
+# 生成: step3/04_quantization_config.yaml
+# ============================================================
+
+model_parameters:
+  # ── 模型文件 ──────────────────────────────────────────────
+  # 使用 Windows step1 导出的 ONNX，或 Ubuntu step3-3 重新导出的
+  onnx_model: '/data/fire_detect.onnx'
+
+  # ── 目标 BPU 架构 ─────────────────────────────────────────
+  # RDK X3:    bernoulli2
+  # RDK X5:    bayes-e   ← 本项目
+  # RDK Ultra: bayes
+  march: 'bayes-e'
+
+  # ── 调试选项 ──────────────────────────────────────────────
+  layer_out_dump: False   # True: 输出每层中间张量（仅调试用，大量磁盘）
+
+  # ── 输出目录 ──────────────────────────────────────────────
+  working_dir: '/data/output_fire_detect'
+  output_model_file_prefix: 'fire_detect_bayese_640x640_nv12'
+
+  # ── 【关键】Softmax BPU 优化 ──────────────────────────────
+  # 问题: YOLO11 的 C2PSA 注意力机制包含 Softmax 算子
+  #       Softmax 默认不支持 INT8，被强制分到 CPU 运行
+  #       导致模型被拆成多个子图，帧率从 90+ 暴跌到个位数
+  #
+  # 解决: 强制 Softmax 在 BPU 以 INT16 精度运行
+  #       节点名称从 step1/operators.json 中 "Softmax" 条目获取
+  #       或使用 hb_mapper checker 命令确认:
+  #         hb_mapper checker --model-type onnx --proto fire_detect.onnx
+  #
+  # ⚠️  节点名称必须与 ONNX 图中完全一致！
+  #     以下为 YOLO11 标准架构节点名，如不同请修改
+  # ⚠️  节点名称已由 step1/operators.json 实际确认:
+  #     本模型使用 HGNetV2 骨干，层索引为 model.11 (非标准的 model.10)
+  node_info: {
+    "/model.11/m/m.0/attn/Softmax": {
+      'ON': 'BPU',
+      'InputType': 'int16',
+      'OutputType': 'int16'
+    }
+  }
+
+# ============================================================
+# 输入参数
+# ============================================================
+input_parameters:
+  input_name: ""     # 留空自动从 ONNX 读取 (通常为 "images")
+
+  # ── 运行时输入格式 ────────────────────────────────────────
+  # nv12: YUV420，摄像头原生格式，性能最优（推荐）
+  # rgb:  RGB 格式
+  # bgr:  OpenCV 默认格式
+  input_type_rt: 'nv12'
+
+  # ── 训练时输入格式 ────────────────────────────────────────
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'    # PyTorch 默认
+
+  # ── 输入尺寸 (留空自动从 ONNX 读取) ──────────────────────
+  input_shape: ''
+  # 如 ONNX 中 shape 不明确，手动指定:
+  # input_shape: '1x3x640x640'
+
+  # ── 归一化参数 ────────────────────────────────────────────
+  # YOLO 标准: pixel / 255.0
+  # hb_mapper 在校准时对输入做: output = (input - mean) * scale
+  # 此处 mean=0, scale=1/255
+  norm_type: 'data_scale'
+  scale_value: 0.003921568627451    # 1/255
+
+# ============================================================
+# 校准参数
+# ============================================================
+calibration_parameters:
+  # ── 校准数据目录 ──────────────────────────────────────────
+  # 由 step3/01_prepare_calibration.py 生成的 .f32 文件目录
+  cal_data_dir: '/data/calibration_f32'
+
+  # ── 数据类型 ──────────────────────────────────────────────
+  # float32: 本项目使用（RGB, 0~255 浮点）
+  # uint8:   归一化前整数
+  cal_data_type: 'float32'
+
+  # ── 校准算法 ──────────────────────────────────────────────
+  # default: 快速默认（推荐）
+  # kl:      KL 散度，更精确但慢 3~5 倍
+  # max:     最大值法，最快但精度损失最大
+  calibration_type: 'default'
+
+# ============================================================
+# 编译参数
+# ============================================================
+compiler_parameters:
+  # ── 编译模式 ──────────────────────────────────────────────
+  # latency:   优先最低延迟（实时检测推荐）
+  # bandwidth: 优先最低带宽（多模型并行场景）
+  compile_mode: 'latency'
+
+  # ── 调试模式 ──────────────────────────────────────────────
+  debug: False     # True: 输出更多调试信息
+
+  # ── 优化等级 ──────────────────────────────────────────────
+  # O0: 不优化（调试）
+  # O1: 基本优化
+  # O2: 进阶优化
+  # O3: 最大优化（部署推荐）
+  optimize_level: 'O3'

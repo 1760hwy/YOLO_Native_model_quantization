@@ -1,0 +1,41 @@
+����ģ��: C:\e\workspace\experiment\EI_yolo\model\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss.pt
+C:\d\Anaconda3\envs\yolo\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+C:\e\workspace\experiment\EI_yolo\ultralytics\nn\extra_modules\ops_dcnv3\functions\dcnv3_func.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+C:\e\workspace\experiment\EI_yolo\ultralytics\nn\extra_modules\ops_dcnv3\functions\dcnv3_func.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+C:\d\Anaconda3\envs\yolo\Lib\site-packages\timm\models\registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+C:\e\workspace\experiment\EI_yolo\ultralytics\nn\extra_modules\mamba_yolo.py:104: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_fwd
+C:\e\workspace\experiment\EI_yolo\ultralytics\nn\extra_modules\mamba_yolo.py:131: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_bwd
+C:\d\Anaconda3\envs\yolo\Lib\site-packages\timm\models\helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[Part1] 40 张测试图 -> PC浮点基线 logit统计
+  logit均值    : -15.50
+  logit最大值   : 2.24
+  正值占比      : 0.08%
+  检测框数(40张): 66
+
+[Part2] 946 张 -> mAP@0.5
+  100/946...
+  200/946...
+  300/946...
+  400/946...
+  500/946...
+  600/946...
+  700/946...
+  800/946...
+  900/946...
+  mAP@0.5: 55.5%  GT=1503  pred=1399  TP=920
+
+============================================================
+PC端浮点基线 完整数据：
+  logit均值    : -15.50
+  logit最大值   : 2.24
+  正值占比      : 0.08%
+  检测框数(40张): 66
+  mAP@0.5(946张): 55.5%
+============================================================

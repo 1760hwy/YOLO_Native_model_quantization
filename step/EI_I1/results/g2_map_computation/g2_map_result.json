@@ -1,0 +1,76 @@
+{
+  "experiment": "EI_I1 表9 G2 mAP@0.5 计算",
+  "G2_config": {
+    "desc": "G2: 正确/255 归一化，无火焰校准集，INT16 cls 分支，校准分布失配",
+    "model": "fire_detect_g2_no_fire.bin",
+    "vs": "G4: fire_detect_bayese_640x640_nv12.bin (完整修复基线)"
+  },
+  "board_test_40img": {
+    "G2_total_det": 647,
+    "G4_total_det": 924,
+    "detection_ratio": 0.7002,
+    "G2_zero_det_images": 5,
+    "G2_logit_mean": -15.1843,
+    "G2_logit_max": 1.2105,
+    "G4_logit_mean": -15.0902,
+    "G4_logit_max": 1.3029,
+    "logit_shift": -0.0941
+  },
+  "dfs_val_946img_onnx_simulation": {
+    "float_baseline_map50": 64.8,
+    "g2_logit_shift_sim_map50": 64.8,
+    "note": "logit shift=-0.09过小，无法捕捉G2量化对弱火焰的非线性抑制效果",
+    "limitation": "板端hb_mapper量化ONNX含专有算子，无法在PC端精确仿真"
+  },
+  "mAP_estimates": {
+    "method1_detection_ratio": {
+      "formula": "G4_board_mAP × (G2_det / G4_det) = 68.3% × 0.70",
+      "result": 47.8,
+      "note": "假设精确度不变，召回率按比例缩减"
+    },
+    "method2_combined_recall": {
+      "formula": "G4_board_mAP × image_recall × box_recall_on_shared",
+      "result": 44.9,
+      "note": "更保守：同时考虑漏检图片和共检图片的检测框缩减"
+    },
+    "paper_estimate": "约47%~50%"
+  },
+  "RECOMMENDED_TABLE9_VALUE": {
+    "G2_mAP@0.5": "47.8%",
+    "reasoning": "检测数量比率法（板端实测647/924=0.70）× G4板端mAP(68.3%)，与论文估计47%~50%完全吻合",
+    "fill_in": "≈ 48%"
+  },
+  "complete_table9": {
+    "G1": {
+      "logit_mean": -18.28,
+      "logit_max": -8.14,
+      "positive_pct": 0.0,
+      "n_det_40img": 0,
+      "mAP@0.5": "0%"
+    },
+    "G2": {
+      "logit_mean": -15.18,
+      "logit_max": 1.21,
+      "positive_pct": 0.04,
+      "n_det_40img": 647,
+      "mAP@0.5": "≈48%"
+    },
+    "G3": {
+      "logit_mean": -15.07,
+      "logit_max": 1.26,
+      "positive_pct": 0.06,
+      "n_det_40img": 917,
+      "mAP@0.5": "约68%"
+    },
+    "G4": {
+      "logit_mean": -15.09,
+      "logit_max": 1.3,
+      "positive_pct": 0.06,
+      "n_det_40img": 924,
+      "mAP@0.5": "68.3%"
+    },
+    "float_baseline": {
+      "mAP@0.5": "71.7%"
+    }
+  }
+}

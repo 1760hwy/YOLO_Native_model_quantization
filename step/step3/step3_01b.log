@@ -1,0 +1,27 @@
+2026-04-21 17:01:45,298 [INFO] ============================================================
+2026-04-21 17:01:45,298 [INFO] STEP 3-1b: 准备含火焰校准数据 (修复 cls 量化失效)
+2026-04-21 17:01:45,298 [INFO]   src : C:\e\workspace\experiment\EI_yolo\BDF-18K
+2026-04-21 17:01:45,298 [INFO]   dst : C:\e\workspace\experiment\EI_yolo\step\step3\calibration_fire_f32
+2026-04-21 17:01:45,298 [INFO]   size=640  num=100  seed=99
+2026-04-21 17:01:45,298 [INFO] ============================================================
+2026-04-21 17:01:45,299 [INFO] [BP-A] 扫描有火焰标注的图片: C:\e\workspace\experiment\EI_yolo\BDF-18K
+2026-04-21 17:01:47,696 [INFO] [BP-A] 找到 947 张有火图片
+2026-04-21 17:01:47,696 [INFO] [BP-B] 随机采样 100 张 (seed=99)
+2026-04-21 17:01:47,697 [INFO] [BP-B] 来源分布: {'公开数据集': 100}
+2026-04-21 17:01:48,951 [INFO]   [20/100] 已处理
+2026-04-21 17:01:50,136 [INFO]   [40/100] 已处理
+2026-04-21 17:01:51,418 [INFO]   [60/100] 已处理
+2026-04-21 17:01:52,655 [INFO]   [80/100] 已处理
+2026-04-21 17:01:53,938 [INFO]   [100/100] 已处理
+2026-04-21 17:01:53,940 [INFO] ============================================================
+2026-04-21 17:01:53,940 [INFO] [BP-D] 完成: 成功=100, 失败=0
+2026-04-21 17:01:53,940 [INFO]   输出: C:\e\workspace\experiment\EI_yolo\step\step3\calibration_fire_f32
+2026-04-21 17:01:53,940 [INFO]   元数据: C:\e\workspace\experiment\EI_yolo\step\step3\calibration_fire_meta.json
+2026-04-21 17:01:53,940 [INFO] ============================================================
+2026-04-21 17:01:53,941 [INFO] 下一步:
+2026-04-21 17:01:53,941 [INFO]   1. scp -r step/step3/calibration_fire_f32 user@ubuntu:/data/
+2026-04-21 17:01:53,941 [INFO]   2. scp step/step4/04_quantization_config.yaml user@ubuntu:/data/
+2026-04-21 17:01:53,941 [INFO]   3. 在 Ubuntu Docker 内修改 YAML:
+2026-04-21 17:01:53,941 [INFO]        cal_data_dir: '/data/calibration_fire_f32'
+2026-04-21 17:01:53,941 [INFO]        calibration_type: 'kl'   ← 已修改
+2026-04-21 17:01:53,941 [INFO]   4. hb_mapper makertbin --model-type onnx --config /data/04_quantization_config.yaml

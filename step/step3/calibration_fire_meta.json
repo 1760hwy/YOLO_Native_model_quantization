@@ -1,0 +1,511 @@
+{
+  "total": 100,
+  "size": 640,
+  "seed": 99,
+  "fire_only": true,
+  "src_counts": {
+    "公开数据集": 100
+  },
+  "files": [
+    {
+      "idx": 0,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(630).jpg",
+      "f32": "000000.f32"
+    },
+    {
+      "idx": 1,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(470).jpg",
+      "f32": "000001.f32"
+    },
+    {
+      "idx": 2,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1832).jpg",
+      "f32": "000002.f32"
+    },
+    {
+      "idx": 3,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2457).jpg",
+      "f32": "000003.f32"
+    },
+    {
+      "idx": 4,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1621).jpg",
+      "f32": "000004.f32"
+    },
+    {
+      "idx": 5,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2141).jpg",
+      "f32": "000005.f32"
+    },
+    {
+      "idx": 6,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2331).jpg",
+      "f32": "000006.f32"
+    },
+    {
+      "idx": 7,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1132).jpg",
+      "f32": "000007.f32"
+    },
+    {
+      "idx": 8,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4063).jpg",
+      "f32": "000008.f32"
+    },
+    {
+      "idx": 9,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (28).png",
+      "f32": "000009.f32"
+    },
+    {
+      "idx": 10,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2359).jpg",
+      "f32": "000010.f32"
+    },
+    {
+      "idx": 11,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3794).jpg",
+      "f32": "000011.f32"
+    },
+    {
+      "idx": 12,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(48).jpg",
+      "f32": "000012.f32"
+    },
+    {
+      "idx": 13,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(179).jpg",
+      "f32": "000013.f32"
+    },
+    {
+      "idx": 14,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3230).jpg",
+      "f32": "000014.f32"
+    },
+    {
+      "idx": 15,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3472).jpg",
+      "f32": "000015.f32"
+    },
+    {
+      "idx": 16,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1860).jpg",
+      "f32": "000016.f32"
+    },
+    {
+      "idx": 17,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (34).png",
+      "f32": "000017.f32"
+    },
+    {
+      "idx": 18,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2648).jpg",
+      "f32": "000018.f32"
+    },
+    {
+      "idx": 19,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1431).jpg",
+      "f32": "000019.f32"
+    },
+    {
+      "idx": 20,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\small_(76).jpg",
+      "f32": "000020.f32"
+    },
+    {
+      "idx": 21,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(808).jpg",
+      "f32": "000021.f32"
+    },
+    {
+      "idx": 22,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3693).jpg",
+      "f32": "000022.f32"
+    },
+    {
+      "idx": 23,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2554).jpg",
+      "f32": "000023.f32"
+    },
+    {
+      "idx": 24,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2381).jpg",
+      "f32": "000024.f32"
+    },
+    {
+      "idx": 25,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(199).jpg",
+      "f32": "000025.f32"
+    },
+    {
+      "idx": 26,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4422).jpg",
+      "f32": "000026.f32"
+    },
+    {
+      "idx": 27,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4383).jpg",
+      "f32": "000027.f32"
+    },
+    {
+      "idx": 28,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(414).jpg",
+      "f32": "000028.f32"
+    },
+    {
+      "idx": 29,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4682).jpg",
+      "f32": "000029.f32"
+    },
+    {
+      "idx": 30,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(513).jpg",
+      "f32": "000030.f32"
+    },
+    {
+      "idx": 31,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(732).jpg",
+      "f32": "000031.f32"
+    },
+    {
+      "idx": 32,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3212).jpg",
+      "f32": "000032.f32"
+    },
+    {
+      "idx": 33,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1948).jpg",
+      "f32": "000033.f32"
+    },
+    {
+      "idx": 34,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1319).jpg",
+      "f32": "000034.f32"
+    },
+    {
+      "idx": 35,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1177).jpg",
+      "f32": "000035.f32"
+    },
+    {
+      "idx": 36,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3005).jpg",
+      "f32": "000036.f32"
+    },
+    {
+      "idx": 37,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\small_(68).jpg",
+      "f32": "000037.f32"
+    },
+    {
+      "idx": 38,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(646).jpg",
+      "f32": "000038.f32"
+    },
+    {
+      "idx": 39,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2140).jpg",
+      "f32": "000039.f32"
+    },
+    {
+      "idx": 40,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(311).jpg",
+      "f32": "000040.f32"
+    },
+    {
+      "idx": 41,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (226).png",
+      "f32": "000041.f32"
+    },
+    {
+      "idx": 42,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3596).jpg",
+      "f32": "000042.f32"
+    },
+    {
+      "idx": 43,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(178).jpg",
+      "f32": "000043.f32"
+    },
+    {
+      "idx": 44,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3184).jpg",
+      "f32": "000044.f32"
+    },
+    {
+      "idx": 45,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4176).jpg",
+      "f32": "000045.f32"
+    },
+    {
+      "idx": 46,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (30).png",
+      "f32": "000046.f32"
+    },
+    {
+      "idx": 47,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1227).jpg",
+      "f32": "000047.f32"
+    },
+    {
+      "idx": 48,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2894).jpg",
+      "f32": "000048.f32"
+    },
+    {
+      "idx": 49,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(616).jpg",
+      "f32": "000049.f32"
+    },
+    {
+      "idx": 50,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (17).png",
+      "f32": "000050.f32"
+    },
+    {
+      "idx": 51,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2475).jpg",
+      "f32": "000051.f32"
+    },
+    {
+      "idx": 52,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(205).jpg",
+      "f32": "000052.f32"
+    },
+    {
+      "idx": 53,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (180).png",
+      "f32": "000053.f32"
+    },
+    {
+      "idx": 54,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(837).jpg",
+      "f32": "000054.f32"
+    },
+    {
+      "idx": 55,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1858).jpg",
+      "f32": "000055.f32"
+    },
+    {
+      "idx": 56,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(3329).jpg",
+      "f32": "000056.f32"
+    },
+    {
+      "idx": 57,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1816).jpg",
+      "f32": "000057.f32"
+    },
+    {
+      "idx": 58,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (223).png",
+      "f32": "000058.f32"
+    },
+    {
+      "idx": 59,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1179).jpg",
+      "f32": "000059.f32"
+    },
+    {
+      "idx": 60,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1705).jpg",
+      "f32": "000060.f32"
+    },
+    {
+      "idx": 61,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(182).jpg",
+      "f32": "000061.f32"
+    },
+    {
+      "idx": 62,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(250).jpg",
+      "f32": "000062.f32"
+    },
+    {
+      "idx": 63,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(783).jpg",
+      "f32": "000063.f32"
+    },
+    {
+      "idx": 64,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (183).png",
+      "f32": "000064.f32"
+    },
+    {
+      "idx": 65,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(33).jpg",
+      "f32": "000065.f32"
+    },
+    {
+      "idx": 66,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1107).jpg",
+      "f32": "000066.f32"
+    },
+    {
+      "idx": 67,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\small_(192).jpg",
+      "f32": "000067.f32"
+    },
+    {
+      "idx": 68,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(3593).jpg",
+      "f32": "000068.f32"
+    },
+    {
+      "idx": 69,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1433).jpg",
+      "f32": "000069.f32"
+    },
+    {
+      "idx": 70,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4012).jpg",
+      "f32": "000070.f32"
+    },
+    {
+      "idx": 71,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4420).jpg",
+      "f32": "000071.f32"
+    },
+    {
+      "idx": 72,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(994).jpg",
+      "f32": "000072.f32"
+    },
+    {
+      "idx": 73,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2435).jpg",
+      "f32": "000073.f32"
+    },
+    {
+      "idx": 74,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1612).jpg",
+      "f32": "000074.f32"
+    },
+    {
+      "idx": 75,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1565).jpg",
+      "f32": "000075.f32"
+    },
+    {
+      "idx": 76,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\small_(126).jpg",
+      "f32": "000076.f32"
+    },
+    {
+      "idx": 77,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1600).jpg",
+      "f32": "000077.f32"
+    },
+    {
+      "idx": 78,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (164).png",
+      "f32": "000078.f32"
+    },
+    {
+      "idx": 79,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\valid\\images\\BoWFireDataset (207).png",
+      "f32": "000079.f32"
+    },
+    {
+      "idx": 80,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (4).png",
+      "f32": "000080.f32"
+    },
+    {
+      "idx": 81,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1560).jpg",
+      "f32": "000081.f32"
+    },
+    {
+      "idx": 82,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1274).jpg",
+      "f32": "000082.f32"
+    },
+    {
+      "idx": 83,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\small_(302).jpg",
+      "f32": "000083.f32"
+    },
+    {
+      "idx": 84,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4660).jpg",
+      "f32": "000084.f32"
+    },
+    {
+      "idx": 85,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(8).jpg",
+      "f32": "000085.f32"
+    },
+    {
+      "idx": 86,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (225).png",
+      "f32": "000086.f32"
+    },
+    {
+      "idx": 87,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(81).jpg",
+      "f32": "000087.f32"
+    },
+    {
+      "idx": 88,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(274).jpg",
+      "f32": "000088.f32"
+    },
+    {
+      "idx": 89,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\small_(34).jpg",
+      "f32": "000089.f32"
+    },
+    {
+      "idx": 90,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1206).jpg",
+      "f32": "000090.f32"
+    },
+    {
+      "idx": 91,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2853).jpg",
+      "f32": "000091.f32"
+    },
+    {
+      "idx": 92,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2603).jpg",
+      "f32": "000092.f32"
+    },
+    {
+      "idx": 93,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (176).png",
+      "f32": "000093.f32"
+    },
+    {
+      "idx": 94,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(476).jpg",
+      "f32": "000094.f32"
+    },
+    {
+      "idx": 95,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(3003).jpg",
+      "f32": "000095.f32"
+    },
+    {
+      "idx": 96,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1164).jpg",
+      "f32": "000096.f32"
+    },
+    {
+      "idx": 97,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1747).jpg",
+      "f32": "000097.f32"
+    },
+    {
+      "idx": 98,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(655).jpg",
+      "f32": "000098.f32"
+    },
+    {
+      "idx": 99,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1834).jpg",
+      "f32": "000099.f32"
+    }
+  ]
+}

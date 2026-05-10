@@ -1,0 +1,373 @@
+2026-04-20 09:48:13,933 [INFO] ============================================================
+2026-04-20 09:48:13,933 [INFO] STEP 1 总入口 — ONNX 导出 + 算子兼容性分析
+2026-04-20 09:48:13,933 [INFO] Python: C:\d\Anaconda3\envs\yolo\python.exe
+2026-04-20 09:48:13,933 [INFO] ============================================================
+2026-04-20 09:48:13,933 [INFO] 
+============================================================
+2026-04-20 09:48:13,933 [INFO] 运行: 01_modify_head.py — 修改 head.py → 6路 NHWC 输出
+2026-04-20 09:48:13,933 [INFO] ============================================================
+2026-04-20 09:48:14,052 [INFO] ✅ 01_modify_head.py 完成
+2026-04-20 09:48:14,057 [INFO] 
+============================================================
+2026-04-20 09:48:14,057 [INFO] 运行: 02_export_onnx.py — 导出 ONNX (opset=11)
+2026-04-20 09:48:14,057 [INFO] ============================================================
+2026-04-20 09:48:22,992 [ERROR] ❌ 02_export_onnx.py 失败 (exit=1)
+2026-04-20 09:48:22,992 [ERROR] Step 1 在 02_export_onnx.py 处中止，请查看上方错误信息
+�� C:\e\workspace\experiment\EI_yolo\ultralytics\nn\modules\head.py.bak_rdkx5 ✓
+2026-04-20 09:48:14,030 [INFO] [BP-C] 找到 Detect.forward: 行 58 → 69 ✓
+2026-04-20 09:48:14,032 [INFO] [BP-D] 写回 head.py 完成 ✓
+2026-04-20 09:48:14,043 [INFO] [BP-D] 验证通过: 6路 NHWC 输出已注入 ✓
+2026-04-20 09:48:14,043 [INFO] ============================================================
+2026-04-20 09:48:14,043 [INFO] STEP 1-1 完成 → 继续运行 02_export_onnx.py
+2026-04-20 09:48:14,043 [INFO] ============================================================
+2026-04-20 09:48:14,122 [INFO] ============================================================
+2026-04-20 09:48:14,123 [INFO] STEP 1-2: 导出 ONNX (opset=11, imgsz=640)
+2026-04-20 09:48:14,123 [INFO] ============================================================
+2026-04-20 09:48:14,123 [INFO] [BP-A] 加载 .pt 模型: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.pt
+2026-04-20 09:48:19,922 [INFO] [BP-A] 模型加载成功 ✓
+2026-04-20 09:48:19,922 [INFO]        模型信息: None
+2026-04-20 09:48:19,922 [INFO] [BP-B] 开始导出 ONNX ...
+2026-04-20 09:48:19,922 [INFO]        imgsz=640, opset=11, simplify=False, dynamic=False
+2026-04-20 09:48:22,183 [INFO] [BP-B] 导出完成，原始路径: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.onnx ✓
+2026-04-20 09:48:22,227 [INFO] [BP-B] 已复制到: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 09:48:22,227 [INFO] [BP-C] ONNX 文件: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 09:48:22,227 [INFO] [BP-C] 文件大小: 7.36 MB ✓
+2026-04-20 09:48:22,227 [INFO] [BP-D] ONNX 版本: 1.21.0
+2026-04-20 09:48:22,332 [INFO] [BP-D] onnx.checker 通过 ✓
+2026-04-20 09:48:22,332 [INFO] [BP-D] IR Version: 6
+2026-04-20 09:48:22,332 [INFO] [BP-D] Opset Version: 11
+2026-04-20 09:48:22,333 [INFO] [BP-D] 输入数量: 1
+2026-04-20 09:48:22,333 [INFO] [BP-D] 输出数量: 4
+2026-04-20 09:48:22,333 [INFO] [BP-D]   输入: images → [1, 3, 640, 640]
+2026-04-20 09:48:22,333 [INFO] [BP-D]   输出0: output0 → [0, 0, 0]
+2026-04-20 09:48:22,333 [INFO] [BP-D]   输出1: onnx::Shape_631 → [0, 65, 0, 0]
+2026-04-20 09:48:22,333 [INFO] [BP-D]   输出2: onnx::Reshape_677 → [0, 65, 0, 0]
+2026-04-20 09:48:22,334 [INFO] [BP-D]   输出3: onnx::Reshape_723 → [0, 65, 0, 0]
+2026-04-20 09:48:22,334 [ERROR] [BP-D] 输出数量异常! 期望 6，实际 4
+2026-04-20 09:48:22,334 [ERROR]        请检查 01_modify_head.py 是否已成功执行
+2026-04-20 09:55:51,905 [INFO] ============================================================
+2026-04-20 09:55:51,905 [INFO] STEP 1-1: Modify Detect.forward -> 6-output NHWC for RDK X5
+2026-04-20 09:55:51,906 [INFO] ============================================================
+2026-04-20 09:55:51,906 [INFO] [BP-A] head.py: C:\e\workspace\experiment\EI_yolo\ultralytics\nn\modules\head.py
+2026-04-20 09:55:51,906 [INFO] [BP-A] Original head.py confirmed. OK
+2026-04-20 09:55:51,906 [WARNING] [BP-B] Backup already exists, skip: C:\e\workspace\experiment\EI_yolo\ultralytics\nn\modules\head.py.bak_rdkx5
+2026-04-20 09:55:51,906 [INFO] [BP-C] Detect.forward found: lines 58 to 69 (1-indexed)
+2026-04-20 09:55:51,906 [INFO]        Original method first line: '    def forward(self, x):'
+2026-04-20 09:55:51,907 [INFO]        Original method last line:  ''
+2026-04-20 09:55:51,907 [INFO] [BP-C] Method indent level: 4 spaces
+2026-04-20 09:55:51,907 [INFO] [BP-D] head.py written.
+2026-04-20 09:55:51,917 [ERROR] [BP-D] Old forward signature still present at line 58!
+2026-04-20 09:56:31,309 [INFO] ============================================================
+2026-04-20 09:56:31,309 [INFO] STEP 1-1: Modify Detect.forward -> 6-output NHWC for RDK X5
+2026-04-20 09:56:31,309 [INFO] ============================================================
+2026-04-20 09:56:31,310 [INFO] [BP-A] head.py: C:\e\workspace\experiment\EI_yolo\ultralytics\nn\modules\head.py
+2026-04-20 09:56:31,310 [WARNING] [BP-A] head.py already modified, skip.
+2026-04-20 09:56:31,310 [INFO]        To reapply: restore from .bak_rdkx5 first
+2026-04-20 09:56:53,965 [INFO] ============================================================
+2026-04-20 09:56:53,965 [INFO] STEP 1-1: Modify Detect.forward -> 6-output NHWC for RDK X5
+2026-04-20 09:56:53,965 [INFO] ============================================================
+2026-04-20 09:56:53,966 [INFO] [BP-A] head.py: C:\e\workspace\experiment\EI_yolo\ultralytics\nn\modules\head.py
+2026-04-20 09:56:53,966 [INFO] [BP-A] Original head.py confirmed. OK
+2026-04-20 09:56:53,966 [WARNING] [BP-B] Backup already exists, skip: C:\e\workspace\experiment\EI_yolo\ultralytics\nn\modules\head.py.bak_rdkx5
+2026-04-20 09:56:53,966 [INFO] [BP-C] Detect.forward found: lines 58 to 69 (1-indexed)
+2026-04-20 09:56:53,966 [INFO]        Original method first line: '    def forward(self, x):'
+2026-04-20 09:56:53,966 [INFO]        Original method last line:  ''
+2026-04-20 09:56:53,966 [INFO] [BP-C] Method indent level: 4 spaces
+2026-04-20 09:56:53,967 [INFO] [BP-D] head.py written.
+2026-04-20 09:56:53,976 [INFO] [BP-D] Marker found at line 60
+2026-04-20 09:56:53,977 [INFO] [BP-D] forward indent = 4 spaces (expected 4)
+2026-04-20 09:56:53,977 [INFO] [BP-D] Indent check passed: forward is at class level.
+2026-04-20 09:56:53,977 [INFO] [BP-D] Verification passed: 6-output NHWC forward injected correctly.
+2026-04-20 09:56:53,977 [INFO] ============================================================
+2026-04-20 09:56:53,977 [INFO] STEP 1-1 complete -> run 02_export_onnx.py
+2026-04-20 09:56:53,977 [INFO] ============================================================
+2026-04-20 09:57:11,974 [INFO] ============================================================
+2026-04-20 09:57:11,974 [INFO] STEP 1-2: 导出 ONNX (opset=11, imgsz=640)
+2026-04-20 09:57:11,974 [INFO] ============================================================
+2026-04-20 09:57:11,974 [INFO] [BP-A] 加载 .pt 模型: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.pt
+2026-04-20 09:57:17,574 [INFO] [BP-A] 模型加载成功 ✓
+2026-04-20 09:57:17,574 [INFO]        模型信息: None
+2026-04-20 09:57:17,574 [INFO] [BP-B] Start ONNX export ...
+2026-04-20 09:57:17,574 [INFO]        imgsz=640, opset=11, simplify=False, dynamic=False
+2026-04-20 09:57:19,622 [INFO] [BP-B] Export done: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.onnx
+2026-04-20 09:57:19,663 [INFO] [BP-B] Copied to: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 09:57:19,663 [INFO] [BP-C] ONNX 文件: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 09:57:19,663 [INFO] [BP-C] 文件大小: 7.36 MB ✓
+2026-04-20 09:57:19,663 [INFO] [BP-D] ONNX 版本: 1.21.0
+2026-04-20 09:57:19,752 [INFO] [BP-D] onnx.checker 通过 ✓
+2026-04-20 09:57:19,752 [INFO] [BP-D] IR Version: 6
+2026-04-20 09:57:19,752 [INFO] [BP-D] Opset Version: 11
+2026-04-20 09:57:19,752 [INFO] [BP-D] 输入数量: 1
+2026-04-20 09:57:19,752 [INFO] [BP-D] 输出数量: 4
+2026-04-20 09:57:19,752 [INFO] [BP-D]   输入: images → [1, 3, 640, 640]
+2026-04-20 09:57:19,752 [INFO] [BP-D]   输出0: output0 → [0, 0, 0]
+2026-04-20 09:57:19,752 [INFO] [BP-D]   输出1: onnx::Shape_631 → [0, 65, 0, 0]
+2026-04-20 09:57:19,753 [INFO] [BP-D]   输出2: onnx::Reshape_677 → [0, 65, 0, 0]
+2026-04-20 09:57:19,753 [INFO] [BP-D]   输出3: onnx::Reshape_723 → [0, 65, 0, 0]
+2026-04-20 09:57:19,753 [ERROR] [BP-D] 输出数量异常! 期望 6，实际 4
+2026-04-20 09:57:19,753 [ERROR]        请检查 01_modify_head.py 是否已成功执行
+2026-04-20 10:07:14,630 [INFO] ============================================================
+2026-04-20 10:07:14,631 [INFO] STEP 1-1: Modify Detect_LSDECD.forward -> 6-output NHWC
+2026-04-20 10:07:14,631 [INFO]           Target: extra_modules/head.py
+2026-04-20 10:07:14,631 [INFO] ============================================================
+2026-04-20 10:07:14,631 [INFO] [BP-A] Target: C:\e\workspace\experiment\EI_yolo\ultralytics\nn\extra_modules\head.py
+2026-04-20 10:07:14,631 [INFO] [BP-A] Detect_LSDECD class confirmed. OK
+2026-04-20 10:07:14,633 [INFO] [BP-B] Backup: C:\e\workspace\experiment\EI_yolo\ultralytics\nn\extra_modules\head.py.bak_rdkx5
+2026-04-20 10:07:14,635 [INFO] [BP-C] Detect_LSDECD.forward: lines 1402..1436 (1-indexed)
+2026-04-20 10:07:14,635 [INFO]        First line: '    def forward(self, x):'
+2026-04-20 10:07:14,635 [INFO]        Next method: '    def bias_init(self):'
+2026-04-20 10:07:14,635 [INFO] [BP-C] Method indent: 4 spaces
+2026-04-20 10:07:14,636 [INFO] [BP-D] Written.
+2026-04-20 10:07:14,648 [INFO] [BP-D] Marker found at line 1404
+2026-04-20 10:07:14,648 [INFO] [BP-D] forward indent = 4 (expected 4)
+2026-04-20 10:07:14,648 [INFO] [BP-D] Verification passed.
+2026-04-20 10:07:14,648 [INFO] ============================================================
+2026-04-20 10:07:14,648 [INFO] STEP 1-1 complete -> run 02_export_onnx.py
+2026-04-20 10:07:14,648 [INFO] ============================================================
+2026-04-20 10:07:58,498 [INFO] ============================================================
+2026-04-20 10:07:58,498 [INFO] STEP 1-2: 导出 ONNX (opset=11, imgsz=640)
+2026-04-20 10:07:58,498 [INFO] ============================================================
+2026-04-20 10:07:58,498 [INFO] [BP-A] 加载 .pt 模型: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.pt
+2026-04-20 10:08:04,240 [INFO] [BP-A] 模型加载成功 ✓
+2026-04-20 10:08:04,240 [INFO]        模型信息: None
+2026-04-20 10:08:04,240 [INFO] [BP-B] Start ONNX export ...
+2026-04-20 10:08:04,240 [INFO]        imgsz=640, opset=11, simplify=False, dynamic=False
+2026-04-20 10:08:06,225 [INFO] [BP-B] Export done: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.onnx
+2026-04-20 10:08:06,266 [INFO] [BP-B] Copied to: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 10:08:06,266 [INFO] [BP-C] ONNX 文件: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 10:08:06,266 [INFO] [BP-C] 文件大小: 7.19 MB ✓
+2026-04-20 10:08:06,266 [INFO] [BP-D] ONNX 版本: 1.21.0
+2026-04-20 10:08:06,357 [INFO] [BP-D] onnx.checker 通过 ✓
+2026-04-20 10:08:06,357 [INFO] [BP-D] IR Version: 6
+2026-04-20 10:08:06,357 [INFO] [BP-D] Opset Version: 11
+2026-04-20 10:08:06,357 [INFO] [BP-D] 输入数量: 1
+2026-04-20 10:08:06,357 [INFO] [BP-D] 输出数量: 6
+2026-04-20 10:08:06,357 [INFO] [BP-D]   输入: images → [1, 3, 640, 640]
+2026-04-20 10:08:06,357 [INFO] [BP-D]   输出0: output0 → [0, 0, 0, 64]
+2026-04-20 10:08:06,357 [INFO] [BP-D]   输出1: 715 → [0, 0, 0, 64]
+2026-04-20 10:08:06,357 [INFO] [BP-D]   输出2: 718 → [0, 0, 0, 64]
+2026-04-20 10:08:06,357 [INFO] [BP-D]   输出3: 720 → [0, 0, 0, 1]
+2026-04-20 10:08:06,357 [INFO] [BP-D]   输出4: 722 → [0, 0, 0, 1]
+2026-04-20 10:08:06,358 [INFO] [BP-D]   输出5: 724 → [0, 0, 0, 1]
+2026-04-20 10:08:06,358 [INFO] [BP-D] 输出数量正确: 6 个 (3 bbox + 3 cls) ✓
+2026-04-20 10:08:06,358 [INFO] ============================================================
+2026-04-20 10:08:06,358 [INFO] STEP 1-2 完成 → 继续运行 03_extract_operators.py
+2026-04-20 10:08:06,358 [INFO] ============================================================
+2026-04-20 10:13:30,963 [INFO] ============================================================
+2026-04-20 10:13:30,963 [INFO] STEP 1-3: 提取 ONNX 算子列表
+2026-04-20 10:13:30,963 [INFO] ============================================================
+2026-04-20 10:13:30,963 [INFO] [BP-A] 加载 ONNX: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 10:13:31,292 [INFO] [BP-A] shape inference 完成 ✓
+2026-04-20 10:13:31,297 [INFO] [BP-A] 图中总节点数: 468
+2026-04-20 10:13:31,298 [INFO] [BP-B] 遍历节点，收集算子信息 ...
+2026-04-20 10:13:31,305 [INFO] [BP-B] 唯一算子数量: 23
+2026-04-20 10:13:31,306 [INFO] [BP-B] 算子列表: ['Add', 'Cast', 'Concat', 'Constant', 'ConstantOfShape', 'Conv', 'Gather', 'Identity', 'InstanceNormalization', 'MatMul', 'MaxPool', 'Mul', 'Pad', 'Relu', 'Reshape', 'Resize', 'Shape', 'Sigmoid', 'Slice', 'Softmax', 'Split', 'Transpose', 'Unsqueeze']
+2026-04-20 10:13:31,306 [INFO]        Add: 19 个节点
+2026-04-20 10:13:31,306 [INFO]        Cast: 2 个节点
+2026-04-20 10:13:31,306 [INFO]        Concat: 28 个节点
+2026-04-20 10:13:31,306 [INFO]        Constant: 54 个节点
+2026-04-20 10:13:31,306 [INFO]        ConstantOfShape: 2 个节点
+2026-04-20 10:13:31,306 [INFO]        Conv: 112 个节点
+2026-04-20 10:13:31,306 [INFO]        Gather: 4 个节点
+2026-04-20 10:13:31,307 [INFO]        Identity: 8 个节点
+2026-04-20 10:13:31,307 [INFO]        InstanceNormalization: 9 个节点
+2026-04-20 10:13:31,307 [INFO]        MatMul: 2 个节点
+2026-04-20 10:13:31,307 [INFO]        MaxPool: 4 个节点
+2026-04-20 10:13:31,307 [INFO]        Mul: 66 个节点
+2026-04-20 10:13:31,307 [INFO]        Pad: 2 个节点
+2026-04-20 10:13:31,307 [INFO]        Relu: 35 个节点
+2026-04-20 10:13:31,307 [INFO]        Reshape: 25 个节点
+2026-04-20 10:13:31,307 [INFO]        Resize: 2 个节点
+2026-04-20 10:13:31,308 [INFO]        Shape: 13 个节点
+2026-04-20 10:13:31,308 [INFO]        Sigmoid: 52 个节点
+2026-04-20 10:13:31,308 [INFO]        Slice: 2 个节点
+2026-04-20 10:13:31,308 [INFO]        Softmax: 1 个节点
+2026-04-20 10:13:31,308 [INFO]        Split: 6 个节点
+2026-04-20 10:13:31,308 [INFO]        Transpose: 10 个节点
+2026-04-20 10:13:31,308 [INFO]        Unsqueeze: 10 个节点
+2026-04-20 10:13:31,308 [INFO] [BP-C] 发现 Softmax 节点 (1 个) ⚠️
+2026-04-20 10:13:31,310 [INFO]        节点名: '/model.11/m/m.0/attn/Softmax' → 需在 hb_mapper YAML 中配置 node_info (int16)
+2026-04-20 10:13:31,337 [INFO] [BP-D] 算子信息已保存: C:\e\workspace\experiment\EI_yolo\step\step1\operators.json ✓
+2026-04-20 10:13:31,338 [INFO] ============================================================
+2026-04-20 10:13:31,338 [INFO] STEP 1-3 完成 → 继续运行 04_check_compatibility.py
+2026-04-20 10:13:31,338 [INFO] ============================================================
+2026-04-20 10:13:31,461 [INFO] ============================================================
+2026-04-20 10:13:31,461 [INFO] STEP 1-4: RDK X5 (bayes-e) 算子兼容性分析
+2026-04-20 10:13:31,461 [INFO] ============================================================
+2026-04-20 10:13:31,461 [INFO] [BP-A] 加载: C:\e\workspace\experiment\EI_yolo\step\step1\operators.json
+2026-04-20 10:13:31,477 [INFO] [BP-A] 待分析算子: 23 个
+2026-04-20 10:13:31,477 [INFO] [BP-B] 逐一对照兼容性数据库 ...
+2026-04-20 10:13:31,478 [INFO] [BP-C] 兼容性分析结果:
+2026-04-20 10:13:31,478 [INFO] ------------------------------------------------------------
+2026-04-20 10:13:31,478 [INFO] 
+  ✅ BPU (20 个算子):
+2026-04-20 10:13:31,483 [INFO]     [ 19x] Add
+2026-04-20 10:13:31,483 [INFO]           → 完全支持，包含 residual 连接场景
+2026-04-20 10:13:31,483 [INFO]     [  2x] Cast
+2026-04-20 10:13:31,483 [INFO]           → 常见类型转换支持（float32/int32/int64/bool）
+2026-04-20 10:13:31,483 [INFO]     [ 28x] Concat
+2026-04-20 10:13:31,483 [INFO]           → 完全支持，多 tensor 拼接
+2026-04-20 10:13:31,483 [INFO]     [ 54x] Constant
+2026-04-20 10:13:31,483 [INFO]           → 常量折叠，不占 BPU 算力
+2026-04-20 10:13:31,484 [INFO]     [  2x] ConstantOfShape
+2026-04-20 10:13:31,484 [INFO]           → 静态 shape 时支持
+2026-04-20 10:13:31,484 [INFO]     [112x] Conv
+2026-04-20 10:13:31,484 [INFO]           → 完全支持，标准二维卷积。kernel size/stride/dilation/group 均支持
+2026-04-20 10:13:31,484 [INFO]     [  8x] Identity
+2026-04-20 10:13:31,485 [INFO]           → 恒等映射，通常被常量折叠消除
+2026-04-20 10:13:31,485 [INFO]     [  9x] InstanceNormalization
+2026-04-20 10:13:31,485 [INFO]           → 完全支持
+2026-04-20 10:13:31,485 [INFO]     [  2x] MatMul
+2026-04-20 10:13:31,485 [INFO]           → 矩阵乘法，二维场景完全支持；高维场景建议验证
+2026-04-20 10:13:31,485 [INFO]     [  4x] MaxPool
+2026-04-20 10:13:31,485 [INFO]           → 完全支持，kernel≤11×11 最优
+2026-04-20 10:13:31,485 [INFO]     [ 66x] Mul
+2026-04-20 10:13:31,485 [INFO]           → 完全支持
+2026-04-20 10:13:31,485 [INFO]     [  2x] Pad
+2026-04-20 10:13:31,486 [INFO]           → 完全支持（constant/reflect/edge padding）
+2026-04-20 10:13:31,486 [INFO]     [ 35x] Relu
+2026-04-20 10:13:31,486 [INFO]           → 完全支持
+2026-04-20 10:13:31,486 [INFO]     [ 25x] Reshape
+2026-04-20 10:13:31,486 [INFO]           → 完全支持（静态 shape）
+2026-04-20 10:13:31,486 [INFO]     [  2x] Resize
+2026-04-20 10:13:31,486 [INFO]           → 支持 nearest/bilinear 插值；静态 scale/size；不支持 cubic
+2026-04-20 10:13:31,486 [INFO]           替换方案: 如使用 bicubic，改为 bilinear
+2026-04-20 10:13:31,486 [INFO]     [ 52x] Sigmoid
+2026-04-20 10:13:31,487 [INFO]           → 完全支持
+2026-04-20 10:13:31,487 [INFO]     [  2x] Slice
+2026-04-20 10:13:31,487 [INFO]           → 静态 slice 完全支持；动态 slice 可能落 CPU
+2026-04-20 10:13:31,487 [INFO]           替换方案: 确保 start/end/axes/step 为常量
+2026-04-20 10:13:31,487 [INFO]     [  6x] Split
+2026-04-20 10:13:31,487 [INFO]           → 完全支持
+2026-04-20 10:13:31,487 [INFO]     [ 10x] Transpose
+2026-04-20 10:13:31,487 [INFO]           → 完全支持
+2026-04-20 10:13:31,487 [INFO]     [ 10x] Unsqueeze
+2026-04-20 10:13:31,488 [INFO]           → 完全支持
+2026-04-20 10:13:31,488 [INFO] 
+  ⚠️  BPU(int16需配置) (1 个算子):
+2026-04-20 10:13:31,488 [INFO]     [  1x] Softmax
+2026-04-20 10:13:31,488 [INFO]           → ⚠️ 默认 INT8 量化时 Softmax 落 CPU，导致子图分裂 FPS 暴跌。需在 hb_mapper YAML 的 node_info 中强制为 BPU + INT16
+2026-04-20 10:13:31,489 [INFO]           替换方案: 在 hb_mapper YAML 中添加:
+  node_info:
+    "<Softmax节点名>": {ON: BPU, InputType: int16, OutputType: int16}
+节点名可由 step 1-3 的 operators.json 查出，或用 hb_mapper checker 确认
+2026-04-20 10:13:31,489 [INFO] 
+  🟡 BPU(有限制) (1 个算子):
+2026-04-20 10:13:31,490 [INFO]     [  4x] Gather
+2026-04-20 10:13:31,490 [INFO]           → 索引为常量时 BPU 支持；动态索引落 CPU
+2026-04-20 10:13:31,490 [INFO]           替换方案: 将动态 gather 移至后处理，或改用静态 slice
+2026-04-20 10:13:31,490 [INFO] 
+  🔴 CPU(退化) (1 个算子):
+2026-04-20 10:13:31,491 [INFO]     [ 13x] Shape
+2026-04-20 10:13:31,491 [INFO]           → Shape 算子输出张量形状，通常为常量化后消除；若残留则落 CPU
+2026-04-20 10:13:31,491 [INFO]           替换方案: 确保使用静态 shape 导出，shape 节点会被常量折叠消除
+2026-04-20 10:13:31,491 [INFO] 
+------------------------------------------------------------
+2026-04-20 10:13:31,491 [INFO]   汇总: BPU=20 | 需配置=2 | CPU退化=1 | 不支持=0 | 未知=0
+2026-04-20 10:13:31,491 [INFO] ------------------------------------------------------------
+2026-04-20 10:13:31,491 [WARNING] [BP-C] 存在 2 个算子需特殊配置 (Softmax int16 等)
+2026-04-20 10:13:31,491 [INFO] [BP-C] 1 个算子将退化到 CPU 运行（不影响正确性，影响性能）
+2026-04-20 10:13:31,492 [INFO] [BP-D] 兼容性报告已保存: C:\e\workspace\experiment\EI_yolo\step\step1\operator_compatibility.json ✓
+2026-04-20 10:13:31,493 [INFO] [BP-D] 关键行动清单: 1 条
+2026-04-20 10:13:31,493 [INFO]        [HIGH] Softmax: 在 hb_mapper YAML 的 node_info 中配置 BPU + int16
+2026-04-20 10:13:31,493 [INFO] ============================================================
+2026-04-20 10:13:31,493 [INFO] STEP 1-4 完成 → Step 1 全部完成！
+2026-04-20 10:13:31,493 [INFO] 下一步: 运行 step/step2/ 进行 ONNX 推理验证
+2026-04-20 10:13:31,493 [INFO] ============================================================
+2026-04-20 17:21:27,972 [INFO] ============================================================
+2026-04-20 17:21:27,978 [INFO] STEP 1-1b: GroupNorm → BatchNorm + ONNX 导出
+2026-04-20 17:21:27,979 [INFO]   模型:     C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.pt
+2026-04-20 17:21:27,980 [INFO]   校准数据: c:\e\workspace\experiment\EI_yolo\step\step3\calibration_f32
+2026-04-20 17:21:27,984 [INFO]   输出:     c:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:21:27,986 [INFO] ============================================================
+2026-04-20 17:21:27,986 [INFO] [BP-A] 加载 best.pt ...
+2026-04-20 17:23:17,444 [INFO] ============================================================
+2026-04-20 17:23:17,444 [INFO] STEP 1-1b: GroupNorm → BatchNorm + ONNX 导出
+2026-04-20 17:23:17,444 [INFO]   模型:     C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.pt
+2026-04-20 17:23:17,444 [INFO]   校准数据: C:\e\workspace\experiment\EI_yolo\step\step3\calibration_f32
+2026-04-20 17:23:17,444 [INFO]   输出:     C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:23:17,444 [INFO] ============================================================
+2026-04-20 17:23:17,445 [INFO] [BP-A] 加载 best.pt ...
+2026-04-20 17:23:22,823 [INFO] [BP-A] 模型加载成功 ✓
+2026-04-20 17:23:22,824 [INFO] [BP-A] 发现 GroupNorm 层: 5 个
+2026-04-20 17:23:22,824 [INFO]          model.24.conv.0.0.gn  (num_groups=16, num_channels=64)
+2026-04-20 17:23:22,824 [INFO]          model.24.conv.1.0.gn  (num_groups=16, num_channels=64)
+2026-04-20 17:23:22,825 [INFO]          model.24.conv.2.0.gn  (num_groups=16, num_channels=64)
+2026-04-20 17:23:22,825 [INFO]          model.24.share_conv.0.bn  (num_groups=16, num_channels=64)
+2026-04-20 17:23:22,825 [INFO]          model.24.share_conv.1.bn  (num_groups=16, num_channels=64)
+2026-04-20 17:23:22,825 [INFO] 
+[BP-B] 收集 GroupNorm 逐通道统计量 (N=30 张校准图) ...
+2026-04-20 17:23:22,826 [INFO]   [hook] model.24.conv.0.0.gn  (GroupNorm 16g, 64ch)
+2026-04-20 17:23:22,826 [INFO]   [hook] model.24.conv.1.0.gn  (GroupNorm 16g, 64ch)
+2026-04-20 17:23:22,826 [INFO]   [hook] model.24.conv.2.0.gn  (GroupNorm 16g, 64ch)
+2026-04-20 17:23:22,827 [INFO]   [hook] model.24.share_conv.0.bn  (GroupNorm 16g, 64ch)
+2026-04-20 17:23:22,827 [INFO]   [hook] model.24.share_conv.1.bn  (GroupNorm 16g, 64ch)
+2026-04-20 17:23:22,828 [INFO]   [BP-B] 运行 30 张校准图 ...
+2026-04-20 17:23:24,161 [INFO]   [10/30] 已处理
+2026-04-20 17:23:25,477 [INFO]   [20/30] 已处理
+2026-04-20 17:23:26,766 [INFO]   [30/30] 已处理
+2026-04-20 17:23:26,766 [INFO]   [stat] model.24.conv.0.0.gn: count=30, mean=[-2.917, 2.699], var=[0.154, 4.873]
+2026-04-20 17:23:26,767 [INFO]   [stat] model.24.share_conv.0.bn: count=90, mean=[-17.221, 10.718], var=[4.250, 71.543]
+2026-04-20 17:23:26,767 [INFO]   [stat] model.24.share_conv.1.bn: count=90, mean=[-17.846, 26.980], var=[10.493, 89.371]
+2026-04-20 17:23:26,767 [INFO]   [stat] model.24.conv.1.0.gn: count=30, mean=[-1.623, 2.507], var=[0.211, 4.945]
+2026-04-20 17:23:26,767 [INFO]   [stat] model.24.conv.2.0.gn: count=30, mean=[-1.230, 2.373], var=[0.320, 6.536]
+2026-04-20 17:23:26,768 [INFO] [BP-B] 收集完成，共 5 层有统计量 ✓
+2026-04-20 17:23:26,768 [INFO] 
+[BP-C] 替换 GroupNorm → BatchNorm2d ...
+2026-04-20 17:23:26,770 [INFO]   [replace] model.24.conv.0.0.gn: GroupNorm(16g, 64ch) → BatchNorm2d(64ch)
+2026-04-20 17:23:26,771 [INFO]   [replace] model.24.conv.1.0.gn: GroupNorm(16g, 64ch) → BatchNorm2d(64ch)
+2026-04-20 17:23:26,772 [INFO]   [replace] model.24.conv.2.0.gn: GroupNorm(16g, 64ch) → BatchNorm2d(64ch)
+2026-04-20 17:23:26,772 [INFO]   [replace] model.24.share_conv.0.bn: GroupNorm(16g, 64ch) → BatchNorm2d(64ch)
+2026-04-20 17:23:26,773 [INFO]   [replace] model.24.share_conv.1.bn: GroupNorm(16g, 64ch) → BatchNorm2d(64ch)
+2026-04-20 17:23:26,773 [INFO] [BP-C] 成功替换 5 个 GroupNorm ✓
+2026-04-20 17:23:26,774 [INFO] [BP-C] 所有 GroupNorm 已替换 ✓
+2026-04-20 17:23:26,777 [INFO] 
+[BP-D] 导出 ONNX (opset=11) ...
+2026-04-20 17:23:26,781 [INFO]   [BP-D] torch.onnx.export → C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:23:30,500 [INFO]   [BP-D] 文件大小:   10.96 MB
+2026-04-20 17:23:30,500 [INFO]   [BP-D] opset:      11
+2026-04-20 17:23:30,500 [INFO]   [BP-D] 输入数量:   1
+2026-04-20 17:23:30,501 [INFO]   [BP-D] 输出数量:   6
+2026-04-20 17:23:30,501 [INFO]   [BP-D]   输入: images → [1, 3, 640, 640]
+2026-04-20 17:23:30,501 [INFO]   [BP-D]   输出0: 3179 → [0, 0, 0, 64]
+2026-04-20 17:23:30,501 [INFO]   [BP-D]   输出1: 3182 → [0, 0, 0, 64]
+2026-04-20 17:23:30,501 [INFO]   [BP-D]   输出2: 3185 → [0, 0, 0, 64]
+2026-04-20 17:23:30,501 [INFO]   [BP-D]   输出3: 3187 → [0, 0, 0, 1]
+2026-04-20 17:23:30,502 [INFO]   [BP-D]   输出4: 3189 → [0, 0, 0, 1]
+2026-04-20 17:23:30,502 [INFO]   [BP-D]   输出5: 3191 → [0, 0, 0, 1]
+2026-04-20 17:23:30,503 [INFO]   [BP-D] ReduceMean 节点: 0 ✓ (GroupNorm 已完全消除)
+2026-04-20 17:23:30,505 [INFO] ============================================================
+2026-04-20 17:23:30,505 [INFO] STEP 1-1b 完成 ✅
+2026-04-20 17:23:30,505 [INFO]   产物: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:23:30,505 [INFO]   下一步: python step/step2/01_sample_images.py (若未运行)
+2026-04-20 17:23:30,505 [INFO]           python step/step2/02_validate_onnx.py
+2026-04-20 17:23:30,505 [INFO] ============================================================
+2026-04-20 17:39:57,113 [INFO] ============================================================
+2026-04-20 17:39:57,114 [INFO] STEP 1-2: 导出 ONNX (opset=11, imgsz=640)
+2026-04-20 17:39:57,114 [INFO] ============================================================
+2026-04-20 17:39:57,114 [INFO] [BP-A] 加载 .pt 模型: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.pt
+2026-04-20 17:40:02,876 [INFO] [BP-A] 模型加载成功 ✓
+2026-04-20 17:40:02,876 [INFO]        模型信息: None
+2026-04-20 17:40:02,876 [INFO] [BP-B] Start ONNX export ...
+2026-04-20 17:40:02,876 [INFO]        imgsz=640, opset=11, simplify=False, dynamic=False
+2026-04-20 17:40:04,888 [INFO] [BP-B] Export done: C:\e\workspace\experiment\EI_yolo\yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss\weights\best.onnx
+2026-04-20 17:40:04,928 [INFO] [BP-B] Copied to: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:40:04,929 [INFO] [BP-C] ONNX 文件: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:40:04,929 [INFO] [BP-C] 文件大小: 7.19 MB ✓
+2026-04-20 17:40:04,929 [INFO] [BP-D] ONNX 版本: 1.21.0
+2026-04-20 17:40:05,012 [INFO] [BP-D] onnx.checker 通过 ✓
+2026-04-20 17:40:05,013 [INFO] [BP-D] IR Version: 6
+2026-04-20 17:40:05,013 [INFO] [BP-D] Opset Version: 11
+2026-04-20 17:40:05,013 [INFO] [BP-D] 输入数量: 1
+2026-04-20 17:40:05,013 [INFO] [BP-D] 输出数量: 6
+2026-04-20 17:40:05,013 [INFO] [BP-D]   输入: images → [1, 3, 640, 640]
+2026-04-20 17:40:05,013 [INFO] [BP-D]   输出0: output0 → [0, 0, 0, 64]
+2026-04-20 17:40:05,013 [INFO] [BP-D]   输出1: 715 → [0, 0, 0, 64]
+2026-04-20 17:40:05,013 [INFO] [BP-D]   输出2: 718 → [0, 0, 0, 64]
+2026-04-20 17:40:05,013 [INFO] [BP-D]   输出3: 720 → [0, 0, 0, 1]
+2026-04-20 17:40:05,013 [INFO] [BP-D]   输出4: 722 → [0, 0, 0, 1]
+2026-04-20 17:40:05,013 [INFO] [BP-D]   输出5: 724 → [0, 0, 0, 1]
+2026-04-20 17:40:05,013 [INFO] [BP-D] 输出数量正确: 6 个 (3 bbox + 3 cls) ✓
+2026-04-20 17:40:05,013 [INFO] ============================================================
+2026-04-20 17:40:05,014 [INFO] STEP 1-2 完成 → 继续运行 03_extract_operators.py
+2026-04-20 17:40:05,014 [INFO] ============================================================

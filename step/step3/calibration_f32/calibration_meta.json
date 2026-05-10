@@ -1,0 +1,511 @@
+{
+  "total": 100,
+  "size": 640,
+  "seed": 42,
+  "src_counts": {
+    "自拍数据集推理": 53,
+    "公开数据集": 47
+  },
+  "files": [
+    {
+      "idx": 0,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (34)_00064.jpg",
+      "f32": "000000.f32"
+    },
+    {
+      "idx": 1,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2699).jpg",
+      "f32": "000001.f32"
+    },
+    {
+      "idx": 2,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(129).jpg",
+      "f32": "000002.f32"
+    },
+    {
+      "idx": 3,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (52)_00046.jpg",
+      "f32": "000003.f32"
+    },
+    {
+      "idx": 4,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(4179).jpg",
+      "f32": "000004.f32"
+    },
+    {
+      "idx": 5,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1926).jpg",
+      "f32": "000005.f32"
+    },
+    {
+      "idx": 6,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1516).jpg",
+      "f32": "000006.f32"
+    },
+    {
+      "idx": 7,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(316).jpg",
+      "f32": "000007.f32"
+    },
+    {
+      "idx": 8,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (51)_00013.jpg",
+      "f32": "000008.f32"
+    },
+    {
+      "idx": 9,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2553).jpg",
+      "f32": "000009.f32"
+    },
+    {
+      "idx": 10,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (39)_00136.jpg",
+      "f32": "000010.f32"
+    },
+    {
+      "idx": 11,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (52)_00032.jpg",
+      "f32": "000011.f32"
+    },
+    {
+      "idx": 12,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly_00135.jpg",
+      "f32": "000012.f32"
+    },
+    {
+      "idx": 13,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (17)_00089.jpg",
+      "f32": "000013.f32"
+    },
+    {
+      "idx": 14,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2291).jpg",
+      "f32": "000014.f32"
+    },
+    {
+      "idx": 15,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (28)_00034.jpg",
+      "f32": "000015.f32"
+    },
+    {
+      "idx": 16,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0428_W_0047.jpg",
+      "f32": "000016.f32"
+    },
+    {
+      "idx": 17,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(1396).jpg",
+      "f32": "000017.f32"
+    },
+    {
+      "idx": 18,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(1365).jpg",
+      "f32": "000018.f32"
+    },
+    {
+      "idx": 19,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2405).jpg",
+      "f32": "000019.f32"
+    },
+    {
+      "idx": 20,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1441).jpg",
+      "f32": "000020.f32"
+    },
+    {
+      "idx": 21,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(167).jpg",
+      "f32": "000021.f32"
+    },
+    {
+      "idx": 22,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (11)_00035.jpg",
+      "f32": "000022.f32"
+    },
+    {
+      "idx": 23,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (30)_00005.jpg",
+      "f32": "000023.f32"
+    },
+    {
+      "idx": 24,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(1312).jpg",
+      "f32": "000024.f32"
+    },
+    {
+      "idx": 25,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (19)_00034.jpg",
+      "f32": "000025.f32"
+    },
+    {
+      "idx": 26,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1117).jpg",
+      "f32": "000026.f32"
+    },
+    {
+      "idx": 27,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (47)_00007.jpg",
+      "f32": "000027.f32"
+    },
+    {
+      "idx": 28,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (35)_00078.jpg",
+      "f32": "000028.f32"
+    },
+    {
+      "idx": 29,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (43)_00024.jpg",
+      "f32": "000029.f32"
+    },
+    {
+      "idx": 30,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (17)_00082.jpg",
+      "f32": "000030.f32"
+    },
+    {
+      "idx": 31,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0428_W_0008.jpg",
+      "f32": "000031.f32"
+    },
+    {
+      "idx": 32,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1470).jpg",
+      "f32": "000032.f32"
+    },
+    {
+      "idx": 33,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0466_W_0238.jpg",
+      "f32": "000033.f32"
+    },
+    {
+      "idx": 34,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (28)_00014.jpg",
+      "f32": "000034.f32"
+    },
+    {
+      "idx": 35,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(4407).jpg",
+      "f32": "000035.f32"
+    },
+    {
+      "idx": 36,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (66)_00071.jpg",
+      "f32": "000036.f32"
+    },
+    {
+      "idx": 37,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (80)_00006.jpg",
+      "f32": "000037.f32"
+    },
+    {
+      "idx": 38,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\train\\images\\BoWFireDataset (6).png",
+      "f32": "000038.f32"
+    },
+    {
+      "idx": 39,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (56)_00066.jpg",
+      "f32": "000039.f32"
+    },
+    {
+      "idx": 40,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (66)_00012.jpg",
+      "f32": "000040.f32"
+    },
+    {
+      "idx": 41,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(467).jpg",
+      "f32": "000041.f32"
+    },
+    {
+      "idx": 42,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (42)_00079.jpg",
+      "f32": "000042.f32"
+    },
+    {
+      "idx": 43,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0428_W_0059.jpg",
+      "f32": "000043.f32"
+    },
+    {
+      "idx": 44,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2970).jpg",
+      "f32": "000044.f32"
+    },
+    {
+      "idx": 45,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(4395).jpg",
+      "f32": "000045.f32"
+    },
+    {
+      "idx": 46,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(40).jpg",
+      "f32": "000046.f32"
+    },
+    {
+      "idx": 47,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(139).jpg",
+      "f32": "000047.f32"
+    },
+    {
+      "idx": 48,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (57)_00042.jpg",
+      "f32": "000048.f32"
+    },
+    {
+      "idx": 49,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2457).jpg",
+      "f32": "000049.f32"
+    },
+    {
+      "idx": 50,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2545).jpg",
+      "f32": "000050.f32"
+    },
+    {
+      "idx": 51,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2389).jpg",
+      "f32": "000051.f32"
+    },
+    {
+      "idx": 52,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0424_W_0178.jpg",
+      "f32": "000052.f32"
+    },
+    {
+      "idx": 53,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2454).jpg",
+      "f32": "000053.f32"
+    },
+    {
+      "idx": 54,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\other_(683).jpg",
+      "f32": "000054.f32"
+    },
+    {
+      "idx": 55,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (78)_00049.jpg",
+      "f32": "000055.f32"
+    },
+    {
+      "idx": 56,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(358).jpg",
+      "f32": "000056.f32"
+    },
+    {
+      "idx": 57,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (30)_00033.jpg",
+      "f32": "000057.f32"
+    },
+    {
+      "idx": 58,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(3331).jpg",
+      "f32": "000058.f32"
+    },
+    {
+      "idx": 59,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (66)_00033.jpg",
+      "f32": "000059.f32"
+    },
+    {
+      "idx": 60,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(1583).jpg",
+      "f32": "000060.f32"
+    },
+    {
+      "idx": 61,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (5)_00041.jpg",
+      "f32": "000061.f32"
+    },
+    {
+      "idx": 62,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0468_W_0263.jpg",
+      "f32": "000062.f32"
+    },
+    {
+      "idx": 63,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (16)_00086.jpg",
+      "f32": "000063.f32"
+    },
+    {
+      "idx": 64,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2922).jpg",
+      "f32": "000064.f32"
+    },
+    {
+      "idx": 65,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0424_W_0155.jpg",
+      "f32": "000065.f32"
+    },
+    {
+      "idx": 66,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(216).jpg",
+      "f32": "000066.f32"
+    },
+    {
+      "idx": 67,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (18)_00033.jpg",
+      "f32": "000067.f32"
+    },
+    {
+      "idx": 68,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\other_(380).jpg",
+      "f32": "000068.f32"
+    },
+    {
+      "idx": 69,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (71)_00075.jpg",
+      "f32": "000069.f32"
+    },
+    {
+      "idx": 70,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (33)_00043.jpg",
+      "f32": "000070.f32"
+    },
+    {
+      "idx": 71,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (31)_00198.jpg",
+      "f32": "000071.f32"
+    },
+    {
+      "idx": 72,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly_00025.jpg",
+      "f32": "000072.f32"
+    },
+    {
+      "idx": 73,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (8)_00085.jpg",
+      "f32": "000073.f32"
+    },
+    {
+      "idx": 74,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\small_(14).jpg",
+      "f32": "000074.f32"
+    },
+    {
+      "idx": 75,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (23)_00001.jpg",
+      "f32": "000075.f32"
+    },
+    {
+      "idx": 76,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1008).jpg",
+      "f32": "000076.f32"
+    },
+    {
+      "idx": 77,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (44)_00014.jpg",
+      "f32": "000077.f32"
+    },
+    {
+      "idx": 78,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2010).jpg",
+      "f32": "000078.f32"
+    },
+    {
+      "idx": 79,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(1623).jpg",
+      "f32": "000079.f32"
+    },
+    {
+      "idx": 80,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (37)_00087.jpg",
+      "f32": "000080.f32"
+    },
+    {
+      "idx": 81,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1592).jpg",
+      "f32": "000081.f32"
+    },
+    {
+      "idx": 82,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (6)_00015.jpg",
+      "f32": "000082.f32"
+    },
+    {
+      "idx": 83,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(980).jpg",
+      "f32": "000083.f32"
+    },
+    {
+      "idx": 84,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2177).jpg",
+      "f32": "000084.f32"
+    },
+    {
+      "idx": 85,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (79)_00114.jpg",
+      "f32": "000085.f32"
+    },
+    {
+      "idx": 86,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1672).jpg",
+      "f32": "000086.f32"
+    },
+    {
+      "idx": 87,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (8)_00163.jpg",
+      "f32": "000087.f32"
+    },
+    {
+      "idx": 88,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(2526).jpg",
+      "f32": "000088.f32"
+    },
+    {
+      "idx": 89,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0424_W_0181.jpg",
+      "f32": "000089.f32"
+    },
+    {
+      "idx": 90,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(4399).jpg",
+      "f32": "000090.f32"
+    },
+    {
+      "idx": 91,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0468_W_0132.jpg",
+      "f32": "000091.f32"
+    },
+    {
+      "idx": 92,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (34)_00003.jpg",
+      "f32": "000092.f32"
+    },
+    {
+      "idx": 93,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (75)_00017.jpg",
+      "f32": "000093.f32"
+    },
+    {
+      "idx": 94,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0350_W_0020.jpg",
+      "f32": "000094.f32"
+    },
+    {
+      "idx": 95,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\large_(52).jpg",
+      "f32": "000095.f32"
+    },
+    {
+      "idx": 96,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0424_W_0019.jpg",
+      "f32": "000096.f32"
+    },
+    {
+      "idx": 97,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\other_(1006).jpg",
+      "f32": "000097.f32"
+    },
+    {
+      "idx": 98,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\middle_(1295).jpg",
+      "f32": "000098.f32"
+    },
+    {
+      "idx": 99,
+      "src": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (39)_00029.jpg",
+      "f32": "000099.f32"
+    }
+  ]
+}

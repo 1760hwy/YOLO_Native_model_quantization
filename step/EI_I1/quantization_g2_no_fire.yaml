@@ -1,0 +1,54 @@
+# ============================================================
+# EI_I1 — G2 量化配置: 无火焰校准集（失配类型②）
+# ============================================================
+# 控制变量:
+#   ✓ 归一化: 正确（写 [0,255] raw，YAML /255）
+#   ✗ 校准集: 无火焰图片 → cls 正值 logit 从未被覆盖
+#   ✓ 量化精度: INT16 for cls（排除精度因素）
+#
+# 运行前准备:
+#   python prepare_calib_g2_no_fire.py
+#   scp -r calibration_g2_no_fire_f32  ubuntu:/data/
+#   scp quantization_g2_no_fire.yaml   ubuntu:/data/
+# ============================================================
+
+model_parameters:
+  onnx_model: '/data/fire_detect_gap.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/data/output_g2_no_fire'
+  output_model_file_prefix: 'fire_detect_g2_no_fire'
+
+  node_info: {
+    "/model.11/m/m.0/attn/Softmax": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    },
+    "/model.24/cv3/Conv": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    },
+    "/model.24/cv3_1/Conv": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    },
+    "/model.24/cv3_2/Conv": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    }
+  }
+
+input_parameters:
+  input_type_rt: 'nv12'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: ''
+  norm_type: 'data_scale'
+  scale_value: 0.003921568627451    # 正确: 仅 YAML 做 /255
+
+calibration_parameters:
+  # G2 专用: 无火焰校准数据（cls 正值区间从未被激活）
+  cal_data_dir: '/data/EI_I1/calibration_g2_no_fire_f32'
+  cal_data_type: 'float32'
+  calibration_type: 'kl'
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: False
+  optimize_level: 'O3'

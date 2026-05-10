@@ -1,0 +1,294 @@
+{
+  "model": "fire_detect_g4_full_fix",
+  "num_images": 40,
+  "total_det": 924,
+  "logit_mean": -15.0902,
+  "logit_std": 3.8929,
+  "logit_min": -32.4108,
+  "logit_max": 1.3029,
+  "logit_pct_positive": 0.06,
+  "avg_infer_ms": 120.72,
+  "logits_npy": "results/fire_detect_g4_full_fix/cls_logits_all.npy",
+  "results": [
+    {
+      "img": "BoWFire_test_BoWFireDataset (12).png",
+      "n_det": 12,
+      "logit_min": -26.5977,
+      "logit_max": 0.8784,
+      "infer_ms": 116.3
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (157).png",
+      "n_det": 31,
+      "logit_min": -27.0208,
+      "logit_max": 0.8475,
+      "infer_ms": 119.09
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (161).png",
+      "n_det": 40,
+      "logit_min": -28.2602,
+      "logit_max": -0.1857,
+      "infer_ms": 119.1
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (170).png",
+      "n_det": 26,
+      "logit_min": -25.6217,
+      "logit_max": -0.0952,
+      "infer_ms": 116.76
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (175).png",
+      "n_det": 22,
+      "logit_min": -26.5295,
+      "logit_max": 0.6787,
+      "infer_ms": 122.2
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (176).png",
+      "n_det": 12,
+      "logit_min": -27.7331,
+      "logit_max": 1.0423,
+      "infer_ms": 122.2
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (179).png",
+      "n_det": 24,
+      "logit_min": -24.7874,
+      "logit_max": 0.6023,
+      "infer_ms": 122.11
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (180).png",
+      "n_det": 51,
+      "logit_min": -28.6566,
+      "logit_max": -0.2295,
+      "infer_ms": 120.73
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (187).png",
+      "n_det": 11,
+      "logit_min": -23.9448,
+      "logit_max": 0.9487,
+      "infer_ms": 122.3
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (192).png",
+      "n_det": 14,
+      "logit_min": -24.5815,
+      "logit_max": 0.6631,
+      "infer_ms": 122.13
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (194).png",
+      "n_det": 37,
+      "logit_min": -28.126,
+      "logit_max": -0.2419,
+      "infer_ms": 116.71
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (201).png",
+      "n_det": 10,
+      "logit_min": -27.9774,
+      "logit_max": -1.0123,
+      "infer_ms": 122.63
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (203).png",
+      "n_det": 9,
+      "logit_min": -27.0486,
+      "logit_max": -0.5577,
+      "infer_ms": 122.21
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (204).png",
+      "n_det": 48,
+      "logit_min": -28.4718,
+      "logit_max": 0.9594,
+      "infer_ms": 122.43
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (217).png",
+      "n_det": 12,
+      "logit_min": -22.3816,
+      "logit_max": 1.2358,
+      "infer_ms": 118.68
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (32).png",
+      "n_det": 39,
+      "logit_min": -26.5785,
+      "logit_max": -0.2104,
+      "infer_ms": 122.32
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (35).png",
+      "n_det": 16,
+      "logit_min": -32.4108,
+      "logit_max": 0.8843,
+      "infer_ms": 122.2
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (38).png",
+      "n_det": 13,
+      "logit_min": -28.1768,
+      "logit_max": 0.821,
+      "infer_ms": 116.56
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (4).png",
+      "n_det": 17,
+      "logit_min": -26.9018,
+      "logit_max": 0.0234,
+      "infer_ms": 116.57
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (44).png",
+      "n_det": 14,
+      "logit_min": -27.2281,
+      "logit_max": 0.5274,
+      "infer_ms": 122.38
+    },
+    {
+      "img": "fire_001.jpg",
+      "n_det": 11,
+      "logit_min": -26.2024,
+      "logit_max": 0.9446,
+      "infer_ms": 116.28
+    },
+    {
+      "img": "fire_002.jpg",
+      "n_det": 33,
+      "logit_min": -26.5122,
+      "logit_max": 0.8004,
+      "infer_ms": 121.97
+    },
+    {
+      "img": "fire_003.jpg",
+      "n_det": 39,
+      "logit_min": -28.7891,
+      "logit_max": -0.0827,
+      "infer_ms": 122.21
+    },
+    {
+      "img": "fire_004.jpg",
+      "n_det": 25,
+      "logit_min": -25.4995,
+      "logit_max": -0.0484,
+      "infer_ms": 122.31
+    },
+    {
+      "img": "fire_005.jpg",
+      "n_det": 23,
+      "logit_min": -26.0292,
+      "logit_max": 0.7958,
+      "infer_ms": 122.72
+    },
+    {
+      "img": "fire_006.jpg",
+      "n_det": 13,
+      "logit_min": -28.7926,
+      "logit_max": 1.0517,
+      "infer_ms": 116.81
+    },
+    {
+      "img": "fire_007.jpg",
+      "n_det": 22,
+      "logit_min": -25.5201,
+      "logit_max": 0.6397,
+      "infer_ms": 122.15
+    },
+    {
+      "img": "fire_008.jpg",
+      "n_det": 56,
+      "logit_min": -28.4696,
+      "logit_max": -0.5586,
+      "infer_ms": 122.69
+    },
+    {
+      "img": "fire_009.jpg",
+      "n_det": 12,
+      "logit_min": -23.7375,
+      "logit_max": 1.1047,
+      "infer_ms": 122.39
+    },
+    {
+      "img": "fire_010.jpg",
+      "n_det": 13,
+      "logit_min": -23.9512,
+      "logit_max": 0.8301,
+      "infer_ms": 116.77
+    },
+    {
+      "img": "fire_011.jpg",
+      "n_det": 37,
+      "logit_min": -28.2879,
+      "logit_max": -0.2419,
+      "infer_ms": 121.91
+    },
+    {
+      "img": "fire_012.jpg",
+      "n_det": 12,
+      "logit_min": -27.2402,
+      "logit_max": -1.027,
+      "infer_ms": 122.35
+    },
+    {
+      "img": "fire_013.jpg",
+      "n_det": 9,
+      "logit_min": -25.3498,
+      "logit_max": -0.6739,
+      "infer_ms": 122.27
+    },
+    {
+      "img": "fire_014.jpg",
+      "n_det": 44,
+      "logit_min": -28.0951,
+      "logit_max": 0.7489,
+      "infer_ms": 122.28
+    },
+    {
+      "img": "fire_015.jpg",
+      "n_det": 12,
+      "logit_min": -22.5889,
+      "logit_max": 1.3029,
+      "infer_ms": 121.85
+    },
+    {
+      "img": "fire_016.jpg",
+      "n_det": 38,
+      "logit_min": -26.4032,
+      "logit_max": 0.0294,
+      "infer_ms": 122.24
+    },
+    {
+      "img": "fire_017.jpg",
+      "n_det": 17,
+      "logit_min": -30.776,
+      "logit_max": 0.9329,
+      "infer_ms": 122.8
+    },
+    {
+      "img": "fire_018.jpg",
+      "n_det": 13,
+      "logit_min": -27.8168,
+      "logit_max": 0.8063,
+      "infer_ms": 116.77
+    },
+    {
+      "img": "fire_019.jpg",
+      "n_det": 17,
+      "logit_min": -25.1168,
+      "logit_max": -0.0328,
+      "infer_ms": 122.11
+    },
+    {
+      "img": "fire_020.jpg",
+      "n_det": 20,
+      "logit_min": -26.8385,
+      "logit_max": 0.582,
+      "infer_ms": 122.19
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# ============================================================
+# EI_I1 — G3 量化配置: INT8 cls 分支（失配类型③）
+# ============================================================
+# 控制变量:
+#   ✓ 归一化: 正确
+#   ✓ 校准集: 含火焰图片 (calibration_fire_f32，复用 step4 已生成)
+#   ✗ 量化精度: cls 分支强制 INT8（255 级，不足以覆盖 [-40,+2] 范围）
+#
+# 失败机制:
+#   cls logit 分布 [-40, +2]，范围 ≈ 42
+#   INT8 量化步长 = threshold/127 ≈ 42/127 ≈ 0.33
+#   fire logit (+2) 对应量化索引 ≈ +6（仅 6 级分辨率）
+#   KL 校准将 threshold 拟合为覆盖密集负值区间，正值被截断
+#
+#   INT16 量化步长 = threshold/32767 → 精度提升 258 倍，正值 logit 完整保留
+#
+# 运行前准备:
+#   scp quantization_g3_int8_cls.yaml  ubuntu:/data/
+#   （复用 step4 的 calibration_fire_f32，无需重新准备校准数据）
+# ============================================================
+
+model_parameters:
+  onnx_model: '/data/fire_detect_gap.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/data/output_g3_int8_cls'
+  output_model_file_prefix: 'fire_detect_g3_int8_cls'
+
+  node_info: {
+    "/model.11/m/m.0/attn/Softmax": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    },
+    # cv3 分支: 强制 BPU INT8，验证量化精度失配
+    # 对比 G4(step5) 的 INT16，INT8 在不对称分布下精度严重不足
+    "/model.24/cv3/Conv": {
+      'ON': 'BPU', 'InputType': 'int8', 'OutputType': 'int8'
+    },
+    "/model.24/cv3_1/Conv": {
+      'ON': 'BPU', 'InputType': 'int8', 'OutputType': 'int8'
+    },
+    "/model.24/cv3_2/Conv": {
+      'ON': 'BPU', 'InputType': 'int8', 'OutputType': 'int8'
+    }
+  }
+
+input_parameters:
+  input_type_rt: 'nv12'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: ''
+  norm_type: 'data_scale'
+  scale_value: 0.003921568627451
+
+calibration_parameters:
+  # 复用 step4 的火焰校准集（无需重新生成）
+  cal_data_dir: '/data/calibration_fire_f32'
+  cal_data_type: 'float32'
+  calibration_type: 'kl'
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: False
+  optimize_level: 'O3'

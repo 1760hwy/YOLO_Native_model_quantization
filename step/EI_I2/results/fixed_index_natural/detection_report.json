@@ -1,0 +1,390 @@
+{
+  "method": "fixed_index",
+  "simulate_reorder": false,
+  "reorder_perm": null,
+  "assumption": "outputs[0:3]=bbox, outputs[3:6]=cls at strides [8,16,32]",
+  "num_images": 40,
+  "decode_success": 0,
+  "decode_fail": 40,
+  "decode_success_rate": "0.0%",
+  "total_detections": 0,
+  "errors_sample": [
+    {
+      "img": "BoWFire_test_BoWFireDataset (12).png",
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but"
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (157).png",
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but"
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (161).png",
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but"
+    }
+  ],
+  "avg_pre_ms": 5.99,
+  "avg_infer_ms": 120.01,
+  "avg_post_ms": 4.08,
+  "results": [
+    {
+      "img": "BoWFire_test_BoWFireDataset (12).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 10.05,
+      "infer_ms": 119.07,
+      "post_ms": 9.08
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (157).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 5.14,
+      "infer_ms": 119.28,
+      "post_ms": 7.7
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (161).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 4.06,
+      "infer_ms": 119.18,
+      "post_ms": 3.73
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (170).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 6.0,
+      "infer_ms": 118.95,
+      "post_ms": 5.45
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (175).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.78,
+      "infer_ms": 122.28,
+      "post_ms": 5.26
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (176).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.95,
+      "infer_ms": 116.91,
+      "post_ms": 3.43
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (179).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 6.14,
+      "infer_ms": 122.16,
+      "post_ms": 3.48
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (180).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 5.92,
+      "infer_ms": 122.16,
+      "post_ms": 2.95
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (187).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 5.71,
+      "infer_ms": 122.18,
+      "post_ms": 3.43
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (192).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 6.14,
+      "infer_ms": 121.97,
+      "post_ms": 3.47
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (194).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 5.89,
+      "infer_ms": 122.73,
+      "post_ms": 3.06
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (201).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.61,
+      "infer_ms": 116.47,
+      "post_ms": 3.25
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (203).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.82,
+      "infer_ms": 122.35,
+      "post_ms": 3.37
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (204).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 5.68,
+      "infer_ms": 121.02,
+      "post_ms": 6.87
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (217).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 5.07,
+      "infer_ms": 122.08,
+      "post_ms": 3.42
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (32).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 5.8,
+      "infer_ms": 117.8,
+      "post_ms": 5.6
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (35).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 7.02,
+      "infer_ms": 122.14,
+      "post_ms": 3.25
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (38).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 6.89,
+      "infer_ms": 116.18,
+      "post_ms": 3.3
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (4).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.85,
+      "infer_ms": 116.62,
+      "post_ms": 3.31
+    },
+    {
+      "img": "BoWFire_test_BoWFireDataset (44).png",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 5.9,
+      "infer_ms": 122.23,
+      "post_ms": 5.02
+    },
+    {
+      "img": "fire_001.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 6.19,
+      "infer_ms": 121.95,
+      "post_ms": 3.25
+    },
+    {
+      "img": "fire_002.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 4.6,
+      "infer_ms": 122.04,
+      "post_ms": 2.94
+    },
+    {
+      "img": "fire_003.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 4.22,
+      "infer_ms": 116.77,
+      "post_ms": 3.28
+    },
+    {
+      "img": "fire_004.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 5.9,
+      "infer_ms": 122.31,
+      "post_ms": 3.93
+    },
+    {
+      "img": "fire_005.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.81,
+      "infer_ms": 122.0,
+      "post_ms": 3.28
+    },
+    {
+      "img": "fire_006.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 6.06,
+      "infer_ms": 116.5,
+      "post_ms": 3.53
+    },
+    {
+      "img": "fire_007.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 6.12,
+      "infer_ms": 121.75,
+      "post_ms": 3.54
+    },
+    {
+      "img": "fire_008.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 6.03,
+      "infer_ms": 116.55,
+      "post_ms": 3.3
+    },
+    {
+      "img": "fire_009.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 6.46,
+      "infer_ms": 116.75,
+      "post_ms": 4.05
+    },
+    {
+      "img": "fire_010.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 7.23,
+      "infer_ms": 122.33,
+      "post_ms": 3.47
+    },
+    {
+      "img": "fire_011.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 6.97,
+      "infer_ms": 116.54,
+      "post_ms": 4.8
+    },
+    {
+      "img": "fire_012.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.68,
+      "infer_ms": 116.32,
+      "post_ms": 3.41
+    },
+    {
+      "img": "fire_013.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.88,
+      "infer_ms": 117.22,
+      "post_ms": 3.42
+    },
+    {
+      "img": "fire_014.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 5.75,
+      "infer_ms": 118.47,
+      "post_ms": 2.94
+    },
+    {
+      "img": "fire_015.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 5.1,
+      "infer_ms": 122.24,
+      "post_ms": 3.46
+    },
+    {
+      "img": "fire_016.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 80 but",
+      "n_det": 0,
+      "pre_ms": 5.72,
+      "infer_ms": 122.47,
+      "post_ms": 3.0
+    },
+    {
+      "img": "fire_017.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 7.74,
+      "infer_ms": 122.37,
+      "post_ms": 4.21
+    },
+    {
+      "img": "fire_018.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 6.82,
+      "infer_ms": 122.37,
+      "post_ms": 5.18
+    },
+    {
+      "img": "fire_019.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 40 but",
+      "n_det": 0,
+      "pre_ms": 5.94,
+      "infer_ms": 122.49,
+      "post_ms": 4.71
+    },
+    {
+      "img": "fire_020.jpg",
+      "decode_ok": false,
+      "error": "IndexError: boolean index did not match indexed array along dimension 0; dimension is 20 but",
+      "n_det": 0,
+      "pre_ms": 4.94,
+      "infer_ms": 117.05,
+      "post_ms": 4.95
+    }
+  ]
+}

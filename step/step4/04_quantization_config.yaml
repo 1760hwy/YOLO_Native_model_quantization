@@ -1,0 +1,140 @@
+# ============================================================
+# hb_mapper 量化配置 - RDK X5 火焰检测模型
+# 模型: yolo11-HGNetV2-C3k2-DWR-LSDECD-SlideLoss
+# 目标: bayes-e (RDK X5)
+# 工具: OpenExplorer v1.2.8 / hb_mapper 1.24.3
+# 生成: step3/04_quantization_config.yaml
+# ============================================================
+# ── 版本历史 ─────────────────────────────────────────────────
+# v1 (fire_detect.onnx):
+#   问题: 9个 InstanceNorm 中 6个 ReduceMean 落 CPU
+#         → 13 个 BPU 子图，实测 2.4 FPS (理论 44 FPS)
+# v2 (fire_detect_gap.onnx):  ← 当前使用版本
+#   修复: 运行 step4/05_replace_instnorm.py 将 InstanceNorm →
+#         GlobalAveragePool 等价子图，BPU 原生支持 GAP
+#         → 预期子图数量大幅减少，FPS 向理论值靠近
+# ============================================================
+
+model_parameters:
+  # ── 模型文件 ──────────────────────────────────────────────
+  # v1 原始版本 (InstanceNorm → 13子图):
+  # onnx_model: '/data/fire_detect.onnx'
+  # v2 GAP 替换版本 (ReduceMean 全 BPU，子图更少):
+  onnx_model: '/data/fire_detect_gap.onnx'
+
+  # ── 目标 BPU 架构 ─────────────────────────────────────────
+  # RDK X3:    bernoulli2
+  # RDK X5:    bayes-e   ← 本项目
+  # RDK Ultra: bayes
+  march: 'bayes-e'
+
+  # ── 调试选项 ──────────────────────────────────────────────
+  layer_out_dump: False   # True: 输出每层中间张量（仅调试用，大量磁盘）
+
+  # ── 输出目录 ──────────────────────────────────────────────
+  working_dir: '/data/output_fire_detect'
+  output_model_file_prefix: 'fire_detect_bayese_640x640_nv12'
+
+  # ── 【关键】节点配置 ──────────────────────────────────────
+  # 问题1: Softmax (C2PSA 注意力) 默认落 CPU，导致子图分裂帧率暴跌
+  #        解决: 强制 BPU int16 运行
+  # 问题2 (v1): InstanceNormalization 内 ReduceMean 不支持 BPU
+  #        v1 解决方案: 强制 BPU int16 (仅部分生效，3/9 成功)
+  #        v2 解决方案: 在 ONNX 图层将 InstanceNorm 替换为 GlobalAveragePool
+  #                     (step4/05_replace_instnorm.py)，GAP 为 BPU 原生算子
+  #                     → 9 个 InstanceNorm 节点已不存在，无需 node_info
+  # 问题3: cls Conv (cv3/cv3_1/cv3_2) INT8 量化失效
+  #        根因: logit 分布极度不对称 [-40,+2]，KL 校准把正值火焰 logit
+  #              映射为负数，BPU 输出恒为 -8~-10，sigmoid 后接近 0
+  #        v2 解决: 强制 ON=CPU (float32)，末尾输出层不产生中间切换开销
+  #        v3 解决: 改用 int16 强制 BPU 运行 ← 当前
+  #                 int16 量化步长 ≈ threshold/32767，精度远高于 INT8，
+  #                 即使 [-40,+2] 不对称分布也能正确保留正值 logit
+  node_info: {
+    "/model.11/m/m.0/attn/Softmax": {
+      'ON': 'BPU',
+      'InputType': 'int16',
+      'OutputType': 'int16'
+    },
+    "/model.24/cv3/Conv": {
+      'ON': 'BPU',
+      'InputType': 'int16',
+      'OutputType': 'int16'
+    },
+    "/model.24/cv3_1/Conv": {
+      'ON': 'BPU',
+      'InputType': 'int16',
+      'OutputType': 'int16'
+    },
+    "/model.24/cv3_2/Conv": {
+      'ON': 'BPU',
+      'InputType': 'int16',
+      'OutputType': 'int16'
+    }
+  }
+
+# ============================================================
+# 输入参数
+# ============================================================
+input_parameters:
+  input_name: ""     # 留空自动从 ONNX 读取 (通常为 "images")
+
+  # ── 运行时输入格式 ────────────────────────────────────────
+  # nv12: 摄像头原生格式，BPU 内部自动完成 NV12→RGB 转换
+  #       板端喂 NV12 uint8 [H*3//2, W]，BPU 应用 scale_value=1/255
+  # rgb:  直接 RGB uint8（已改为 nv12，与博客最佳实践一致）
+  input_type_rt: 'nv12'
+
+  # ── 训练时输入格式 ────────────────────────────────────────
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'    # PyTorch 默认
+
+  # ── 输入尺寸 (留空自动从 ONNX 读取) ──────────────────────
+  input_shape: ''
+  # 如 ONNX 中 shape 不明确，手动指定:
+  # input_shape: '1x3x640x640'
+
+  # ── 归一化参数 ────────────────────────────────────────────
+  # YOLO 标准: pixel / 255.0
+  # hb_mapper 在校准时对输入做: output = (input - mean) * scale
+  # 此处 mean=0, scale=1/255
+  norm_type: 'data_scale'
+  scale_value: 0.003921568627451    # 1/255
+
+# ============================================================
+# 校准参数
+# ============================================================
+calibration_parameters:
+  # ── 校准数据目录 ──────────────────────────────────────────
+  # 由 step3/01b_prepare_calibration_fire.py 生成的 .f32 文件目录（仅有火焰图片）
+  cal_data_dir: '/data/calibration_fire_f32'
+
+  # ── 数据类型 ──────────────────────────────────────────────
+  # float32: 本项目使用（RGB, 0~255 浮点）
+  # uint8:   归一化前整数
+  cal_data_type: 'float32'
+
+  # ── 校准算法 ──────────────────────────────────────────────
+  # default: 快速默认
+  # kl:      KL 散度，能更好处理稀疏激活（fire 检测推荐）← 已切换
+  # max:     最大值法，最快但精度损失最大
+  calibration_type: 'kl'
+
+# ============================================================
+# 编译参数
+# ============================================================
+compiler_parameters:
+  # ── 编译模式 ──────────────────────────────────────────────
+  # latency:   优先最低延迟（实时检测推荐）
+  # bandwidth: 优先最低带宽（多模型并行场景）
+  compile_mode: 'latency'
+
+  # ── 调试模式 ──────────────────────────────────────────────
+  debug: False     # True: 输出更多调试信息
+
+  # ── 优化等级 ──────────────────────────────────────────────
+  # O0: 不优化（调试）
+  # O1: 基本优化
+  # O2: 进阶优化
+  # O3: 最大优化（部署推荐）
+  optimize_level: 'O3'

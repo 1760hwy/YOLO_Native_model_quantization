@@ -1,0 +1,8 @@
+{
+  "group": "G2",
+  "normalization": "correct",
+  "fire_only": false,
+  "no_fire_only": true,
+  "num": 100,
+  "seed": 99
+}

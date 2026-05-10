@@ -1,0 +1,59 @@
+# ============================================================
+# EI_I1 — G1 量化配置: 双重归一化（失配类型①）
+# ============================================================
+# 控制变量:
+#   ✗ 归一化: 错误（校准写 [0,1] + YAML 再 /255 = 等效 /255²）
+#   ✓ 校准集: 含火焰图片 (calibration_g1_wrong_norm_f32)
+#   ✓ 量化精度: INT16 for cls（排除精度因素）
+#
+# 运行前准备:
+#   python prepare_calib_g1_wrong_norm.py
+#   scp -r calibration_g1_wrong_norm_f32  ubuntu:/data/
+#   scp quantization_g1_wrong_norm.yaml   ubuntu:/data/
+#
+# Docker 内执行:
+#   hb_mapper makertbin --model-type onnx \
+#       --config /data/quantization_g1_wrong_norm.yaml
+# ============================================================
+
+model_parameters:
+  onnx_model: '/data/fire_detect_gap.onnx'
+  march: 'bayes-e'
+  layer_out_dump: False
+  working_dir: '/data/output_g1_wrong_norm'
+  output_model_file_prefix: 'fire_detect_g1_wrong_norm'
+
+  node_info: {
+    "/model.11/m/m.0/attn/Softmax": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    },
+    "/model.24/cv3/Conv": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    },
+    "/model.24/cv3_1/Conv": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    },
+    "/model.24/cv3_2/Conv": {
+      'ON': 'BPU', 'InputType': 'int16', 'OutputType': 'int16'
+    }
+  }
+
+input_parameters:
+  input_type_rt: 'nv12'
+  input_type_train: 'rgb'
+  input_layout_train: 'NCHW'
+  input_shape: ''
+  norm_type: 'data_scale'
+  # YAML 中再做一次 /255，与校准数据已有的 /255 构成双重归一化
+  scale_value: 0.003921568627451
+
+calibration_parameters:
+  # G1 专用: 双重归一化的校准数据（值域 [0,1]）
+  cal_data_dir: '/data/EI_I1/calibration_g1_wrong_norm_f32'
+  cal_data_type: 'float32'
+  calibration_type: 'kl'
+
+compiler_parameters:
+  compile_mode: 'latency'
+  debug: False
+  optimize_level: 'O3'

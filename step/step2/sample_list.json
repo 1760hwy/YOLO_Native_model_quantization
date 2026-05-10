@@ -1,0 +1,361 @@
+{
+  "total": 50,
+  "seed": 42,
+  "sources": {
+    "BoWFire_test": 20,
+    "DFS_valid": 20,
+    "DJI_drone": 10
+  },
+  "samples": [
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (32).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (32).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (32).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (170).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (170).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (170).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (12).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (12).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (12).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (187).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (187).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (187).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (180).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (180).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (180).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (44).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (44).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (44).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (175).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (175).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (175).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (4).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (4).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (4).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (161).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (161).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (161).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (201).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (201).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (201).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (38).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (38).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (38).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (203).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (203).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (203).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (157).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (157).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (157).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (217).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (217).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (217).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (194).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (194).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (194).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (35).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (35).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (35).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (204).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (204).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (204).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (192).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (192).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (192).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (176).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (176).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (176).txt"
+    },
+    {
+      "source": "BoWFire_test",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset1_BoWFireDataset\\test\\images\\BoWFireDataset (179).png",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (179).png",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\BoWFire_test_BoWFireDataset (179).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4460).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(4460).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(4460).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(2949).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(2949).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(2949).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(179).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(179).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(179).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(3020).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(3020).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(3020).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(205).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(205).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(205).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(339).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(339).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(339).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(530).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(530).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(530).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\other_(265).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_other_(265).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_other_(265).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\other_(838).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_other_(838).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_other_(838).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(1042).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(1042).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(1042).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(704).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(704).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(704).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\other_(25).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_other_(25).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_other_(25).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2501).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(2501).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(2501).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(4438).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(4438).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(4438).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1805).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(1805).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(1805).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1056).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(1056).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(1056).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2475).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(2475).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(2475).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\large_(2985).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(2985).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_large_(2985).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(730).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(730).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(730).txt"
+    },
+    {
+      "source": "DFS_valid",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\公开数据集\\PublicDataset5_DFS\\valid\\images\\middle_(1033).jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(1033).jpg",
+      "has_label": true,
+      "label_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DFS_valid_middle_(1033).txt"
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0470_W_0091.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_DJI_0470_W_0091.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0468_W_0203.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_DJI_0468_W_0203.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (53)_00015.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_djifly (53)_00015.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0470_W_0001.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_DJI_0470_W_0001.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (48)_00052.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_djifly (48)_00052.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (44)_00064.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_djifly (44)_00064.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (33)_00035.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_djifly (33)_00035.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\DJI_0424_W_0625.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_DJI_0424_W_0625.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly (7)_00111.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_djifly (7)_00111.jpg",
+      "has_label": false,
+      "label_path": null
+    },
+    {
+      "source": "DJI_drone",
+      "original_path": "C:\\e\\workspace\\experiment\\EI_yolo\\BDF-18K\\自拍数据集推理\\djifly_00261.jpg",
+      "sample_path": "c:\\e\\workspace\\experiment\\EI_yolo\\step\\step2\\sample_images\\DJI_drone_djifly_00261.jpg",
+      "has_label": false,
+      "label_path": null
+    }
+  ]
+}

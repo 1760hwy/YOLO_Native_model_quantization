@@ -1,0 +1,7 @@
+{
+  "group": "G1",
+  "normalization": "double (/255 in code + /255 in YAML)",
+  "fire_only": true,
+  "num": 100,
+  "seed": 99
+}

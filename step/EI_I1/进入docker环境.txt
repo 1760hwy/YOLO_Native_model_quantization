@@ -1,0 +1,8 @@
+sudo docker run -it --rm \
+  --gpus all \
+  --shm-size=15g \
+  -v /home/lab304/workspace_rdkx5/hortzon_x5_open_explorer_v1.2.8-py310_20240926:/open_explorer \
+  -v /home/lab304/workspace_rdkx5/EI_yolo/step4:/data \
+  -v /home/lab304/workspace_rdkx5/EI_yolo/EI_I1:/data/EI_I1 \
+  -v /home/lab304/workspace_rdkx5:/models \
+  openexplorer/ai_toolchain_ubuntu_20_x5_gpu:v1.2.8-py310

@@ -1,0 +1,255 @@
+2026-04-20 10:59:09,784 [INFO] ============================================================
+2026-04-20 10:59:09,784 [INFO] STEP 2 总入口 — ONNX 推理验证
+2026-04-20 10:59:09,785 [INFO] Python: C:\Users\hwy\AppData\Local\Programs\Python\Python38\python.exe
+2026-04-20 10:59:09,785 [INFO] ============================================================
+2026-04-20 10:59:09,785 [INFO] 
+============================================================
+2026-04-20 10:59:09,785 [INFO] 运行: 01_sample_images.py — 从 BDF-18K 抽取 50 张图
+2026-04-20 10:59:09,785 [INFO] ============================================================
+2026-04-20 10:59:10,346 [INFO] ✅ 01_sample_images.py 完成
+2026-04-20 10:59:10,347 [INFO] 
+============================================================
+2026-04-20 10:59:10,347 [INFO] 运行: 02_validate_onnx.py — ONNX 推理验证 + 可视化
+2026-04-20 10:59:10,347 [INFO] ============================================================
+2026-04-20 10:59:14,404 [INFO] ✅ 02_validate_onnx.py 完成
+2026-04-20 10:59:14,405 [INFO] 
+============================================================
+2026-04-20 10:59:14,405 [INFO] ✅ STEP 2 全部完成!
+2026-04-20 10:59:14,405 [INFO] 产出文件:
+2026-04-20 10:59:14,405 [INFO]   sample_list.json: 21.9 KB
+2026-04-20 10:59:14,406 [INFO]   validation_report.json: 34.6 KB
+2026-04-20 10:59:14,406 [INFO]   step2.log: 9.5 KB
+2026-04-20 10:59:14,407 [INFO]   results/: 50 张可视化图
+2026-04-20 10:59:14,407 [INFO] 
+下一步: 将 step1/best.onnx 传输到 Ubuntu 执行 Step 3 量化
+2026-04-20 10:59:14,407 [INFO] ============================================================
+BP-B] 从 DJI_drone 采样 10 张
+2026-04-20 10:59:10,331 [INFO] 
+[BP-C] 共复制 50 张图片到: c:\e\workspace\experiment\EI_yolo\step\step2\sample_images
+2026-04-20 10:59:10,333 [INFO] [BP-D] 采样清单已保存: c:\e\workspace\experiment\EI_yolo\step\step2\sample_list.json ✓
+2026-04-20 10:59:10,333 [INFO]        分布: {'BoWFire_test': 20, 'DFS_valid': 20, 'DJI_drone': 10}
+2026-04-20 10:59:10,333 [INFO] ============================================================
+2026-04-20 10:59:10,333 [INFO] STEP 2-1 完成 → 继续运行 02_validate_onnx.py
+2026-04-20 10:59:10,333 [INFO] ============================================================
+2026-04-20 10:59:10,613 [INFO] ============================================================
+2026-04-20 10:59:10,613 [INFO] STEP 2-2: ONNX 推理验证 (50 张图)
+2026-04-20 10:59:10,613 [INFO] ============================================================
+2026-04-20 10:59:10,613 [INFO] [BP-A] 加载 ONNX: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 10:59:10,769 [INFO] [BP-A] ONNX Runtime 1.19.2 | Provider: CPUExecutionProvider ✓
+2026-04-20 10:59:10,769 [INFO] [BP-A] 输入名称: images, shape: [1, 3, 640, 640]
+2026-04-20 10:59:10,769 [INFO] [BP-A] 输出数量: 6
+2026-04-20 10:59:10,778 [INFO] [BP-A] 待验证图片: 50 张
+2026-04-20 10:59:10,778 [INFO] [BP-B] 开始逐图推理 ...
+2026-04-20 10:59:10,897 [INFO] [01/50] BoWFire_test_BoWFireDataset (32).png     |  3 det | 43.0 ms | 768x1024
+2026-04-20 10:59:10,972 [INFO] [02/50] BoWFire_test_BoWFireDataset (170).png    |  2 det | 35.0 ms | 1024x681
+2026-04-20 10:59:11,046 [INFO] [03/50] BoWFire_test_BoWFireDataset (12).png     |  1 det | 39.0 ms | 1024x733
+2026-04-20 10:59:11,118 [INFO] [04/50] BoWFire_test_BoWFireDataset (187).png    |  1 det | 36.2 ms | 1024x768
+2026-04-20 10:59:11,226 [INFO] [05/50] BoWFire_test_BoWFireDataset (180).png    |  6 det | 55.4 ms | 1024x680
+2026-04-20 10:59:11,306 [INFO] [06/50] BoWFire_test_BoWFireDataset (44).png     |  2 det | 43.3 ms | 634x475
+2026-04-20 10:59:11,370 [INFO] [07/50] BoWFire_test_BoWFireDataset (175).png    |  1 det | 34.4 ms | 1024x802
+2026-04-20 10:59:11,441 [INFO] [08/50] BoWFire_test_BoWFireDataset (4).png      |  1 det | 35.2 ms | 1024x683
+2026-04-20 10:59:11,502 [INFO] [09/50] BoWFire_test_BoWFireDataset (161).png    |  3 det | 36.6 ms | 480x360
+2026-04-20 10:59:11,573 [INFO] [10/50] BoWFire_test_BoWFireDataset (201).png    |  1 det | 37.3 ms | 1024x768
+2026-04-20 10:59:11,669 [INFO] [11/50] BoWFire_test_BoWFireDataset (38).png     |  1 det | 41.7 ms | 1365x1024
+2026-04-20 10:59:11,739 [INFO] [12/50] BoWFire_test_BoWFireDataset (203).png    |  1 det | 34.5 ms | 1024x768
+2026-04-20 10:59:11,801 [INFO] [13/50] BoWFire_test_BoWFireDataset (157).png    |  2 det | 34.7 ms | 800x450
+2026-04-20 10:59:11,867 [INFO] [14/50] BoWFire_test_BoWFireDataset (217).png    |  1 det | 32.8 ms | 800x533
+2026-04-20 10:59:11,936 [INFO] [15/50] BoWFire_test_BoWFireDataset (194).png    |  4 det | 36.0 ms | 1024x683
+2026-04-20 10:59:12,019 [INFO] [16/50] BoWFire_test_BoWFireDataset (35).png     |  1 det | 36.1 ms | 1365x1024
+2026-04-20 10:59:12,099 [INFO] [17/50] BoWFire_test_BoWFireDataset (204).png    |  4 det | 35.9 ms | 1024x768
+2026-04-20 10:59:12,169 [INFO] [18/50] BoWFire_test_BoWFireDataset (192).png    |  1 det | 34.2 ms | 1024x768
+2026-04-20 10:59:12,243 [INFO] [19/50] BoWFire_test_BoWFireDataset (176).png    |  1 det | 36.1 ms | 1024x680
+2026-04-20 10:59:12,312 [INFO] [20/50] BoWFire_test_BoWFireDataset (179).png    |  3 det | 35.4 ms | 1024x695
+2026-04-20 10:59:12,367 [INFO] [21/50] DFS_valid_middle_(4460).jpg              |  1 det | 34.4 ms | 480x360
+2026-04-20 10:59:12,417 [INFO] [22/50] DFS_valid_middle_(2949).jpg              |  3 det | 33.9 ms | 580x326
+2026-04-20 10:59:12,467 [INFO] [23/50] DFS_valid_middle_(179).jpg               |  1 det | 35.0 ms | 352x288
+2026-04-20 10:59:12,517 [INFO] [24/50] DFS_valid_large_(3020).jpg               |  1 det | 35.5 ms | 183x275
+2026-04-20 10:59:12,568 [INFO] [25/50] DFS_valid_middle_(205).jpg               |  3 det | 36.1 ms | 778x436
+2026-04-20 10:59:12,626 [INFO] [26/50] DFS_valid_middle_(339).jpg               |  2 det | 41.3 ms | 276x183
+2026-04-20 10:59:12,682 [INFO] [27/50] DFS_valid_large_(530).jpg                |  1 det | 38.2 ms | 550x352
+2026-04-20 10:59:12,741 [INFO] [28/50] DFS_valid_other_(265).jpg                |  1 det | 41.2 ms | 400x300
+2026-04-20 10:59:12,793 [INFO] [29/50] DFS_valid_other_(838).jpg                |  2 det | 37.4 ms | 500x355
+2026-04-20 10:59:12,849 [INFO] [30/50] DFS_valid_large_(1042).jpg               |  1 det | 41.2 ms | 240x160
+2026-04-20 10:59:12,900 [INFO] [31/50] DFS_valid_middle_(704).jpg               |  1 det | 34.5 ms | 360x603
+2026-04-20 10:59:12,951 [INFO] [32/50] DFS_valid_other_(25).jpg                 |  0 det | 35.1 ms | 500x633
+2026-04-20 10:59:13,009 [INFO] [33/50] DFS_valid_large_(2501).jpg               |  3 det | 42.4 ms | 500x312
+2026-04-20 10:59:13,067 [INFO] [34/50] DFS_valid_middle_(4438).jpg              |  2 det | 39.7 ms | 480x360
+2026-04-20 10:59:13,124 [INFO] [35/50] DFS_valid_middle_(1805).jpg              |  1 det | 38.5 ms | 1024x682
+2026-04-20 10:59:13,191 [INFO] [36/50] DFS_valid_middle_(1056).jpg              |  2 det | 36.8 ms | 284x177
+2026-04-20 10:59:13,245 [INFO] [37/50] DFS_valid_large_(2475).jpg               |  1 det | 40.6 ms | 550x413
+2026-04-20 10:59:13,295 [INFO] [38/50] DFS_valid_large_(2985).jpg               |  2 det | 34.3 ms | 202x249
+2026-04-20 10:59:13,342 [INFO] [39/50] DFS_valid_middle_(730).jpg               |  1 det | 34.8 ms | 530x300
+2026-04-20 10:59:13,397 [INFO] [40/50] DFS_valid_middle_(1033).jpg              |  1 det | 39.3 ms | 550x417
+2026-04-20 10:59:13,527 [INFO] [41/50] DJI_drone_DJI_0470_W_0091.jpg            |  0 det | 39.0 ms | 3840x2160
+2026-04-20 10:59:13,686 [INFO] [42/50] DJI_drone_DJI_0468_W_0203.jpg            |  1 det | 36.3 ms | 3840x2160
+2026-04-20 10:59:13,795 [INFO] [43/50] DJI_drone_djifly (53)_00015.jpg          |  1 det | 34.9 ms | 1280x720
+2026-04-20 10:59:13,920 [INFO] [44/50] DJI_drone_DJI_0470_W_0001.jpg            |  1 det | 34.4 ms | 3840x2160
+2026-04-20 10:59:14,029 [INFO] [45/50] DJI_drone_djifly (48)_00052.jpg          |  1 det | 31.7 ms | 1280x720
+2026-04-20 10:59:14,096 [INFO] [46/50] DJI_drone_djifly (44)_00064.jpg          |  1 det | 37.9 ms | 1280x720
+2026-04-20 10:59:14,162 [INFO] [47/50] DJI_drone_djifly (33)_00035.jpg          |  0 det | 37.0 ms | 1280x720
+2026-04-20 10:59:14,231 [INFO] [48/50] DJI_drone_DJI_0424_W_0625.jpg            |  1 det | 34.2 ms | 1920x1080
+2026-04-20 10:59:14,294 [INFO] [49/50] DJI_drone_djifly (7)_00111.jpg           |  1 det | 36.5 ms | 960x544
+2026-04-20 10:59:14,361 [INFO] [50/50] DJI_drone_djifly_00261.jpg               |  1 det | 37.2 ms | 960x544
+2026-04-20 10:59:14,364 [INFO] 
+============================================================
+2026-04-20 10:59:14,365 [INFO] [BP-E] 验证完成: 50 张成功 | 0 张失败
+2026-04-20 10:59:14,365 [INFO]        总检测框: 78 个
+2026-04-20 10:59:14,366 [INFO]        平均推理: 37.2 ms/张
+2026-04-20 10:59:14,366 [INFO]        估计 FPS (纯推理): 26.9
+2026-04-20 10:59:14,366 [INFO]        [BoWFire_test] 20 张 | 40 框 | 检出率 100%
+2026-04-20 10:59:14,366 [INFO]        [DFS_valid] 20 张 | 30 框 | 检出率 95%
+2026-04-20 10:59:14,366 [INFO]        [DJI_drone] 10 张 | 8 框 | 检出率 80%
+2026-04-20 10:59:14,369 [INFO] 
+[BP-E] 验证报告: c:\e\workspace\experiment\EI_yolo\step\step2\validation_report.json ✓
+2026-04-20 10:59:14,369 [INFO] [BP-E] 可视化结果: c:\e\workspace\experiment\EI_yolo\step\step2\results/ ✓
+2026-04-20 10:59:14,369 [INFO] ============================================================
+2026-04-20 10:59:14,370 [INFO] STEP 2-2 完成 ✅ — 请查看 results/ 目录中的检测可视化
+2026-04-20 10:59:14,370 [INFO] ============================================================
+2026-04-20 17:24:00,365 [INFO] ============================================================
+2026-04-20 17:24:00,365 [INFO] STEP 2-2: ONNX 推理验证 (50 张图)
+2026-04-20 17:24:00,365 [INFO] ============================================================
+2026-04-20 17:24:00,365 [INFO] [BP-A] 加载 ONNX: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:24:00,712 [INFO] [BP-A] ONNX Runtime 1.24.4 | Provider: CPUExecutionProvider ✓
+2026-04-20 17:24:00,713 [INFO] [BP-A] 输入名称: images, shape: [1, 3, 640, 640]
+2026-04-20 17:24:00,713 [INFO] [BP-A] 输出数量: 6
+2026-04-20 17:24:00,721 [INFO] [BP-A] 待验证图片: 50 张
+2026-04-20 17:24:00,722 [INFO] [BP-B] 开始逐图推理 ...
+2026-04-20 17:24:00,806 [INFO] [01/50] BoWFire_test_BoWFireDataset (32).png     | 154 det | 37.0 ms | 768x1024
+2026-04-20 17:24:00,884 [INFO] [02/50] BoWFire_test_BoWFireDataset (170).png    | 153 det | 33.4 ms | 1024x681
+2026-04-20 17:24:00,960 [INFO] [03/50] BoWFire_test_BoWFireDataset (12).png     | 160 det | 33.7 ms | 1024x733
+2026-04-20 17:24:01,033 [INFO] [04/50] BoWFire_test_BoWFireDataset (187).png    | 79 det | 32.8 ms | 1024x768
+2026-04-20 17:24:01,113 [INFO] [05/50] BoWFire_test_BoWFireDataset (180).png    | 186 det | 36.7 ms | 1024x680
+2026-04-20 17:24:01,218 [INFO] [06/50] BoWFire_test_BoWFireDataset (44).png     | 194 det | 63.1 ms | 634x475
+2026-04-20 17:24:01,362 [INFO] [07/50] BoWFire_test_BoWFireDataset (175).png    | 96 det | 66.1 ms | 1024x802
+2026-04-20 17:24:01,451 [INFO] [08/50] BoWFire_test_BoWFireDataset (4).png      | 155 det | 38.1 ms | 1024x683
+2026-04-20 17:24:01,515 [INFO] [09/50] BoWFire_test_BoWFireDataset (161).png    | 135 det | 34.1 ms | 480x360
+2026-04-20 17:24:01,583 [INFO] [10/50] BoWFire_test_BoWFireDataset (201).png    | 149 det | 32.0 ms | 1024x768
+2026-04-20 17:24:01,671 [INFO] [11/50] BoWFire_test_BoWFireDataset (38).png     | 102 det | 34.4 ms | 1365x1024
+2026-04-20 17:24:01,757 [INFO] [12/50] BoWFire_test_BoWFireDataset (203).png    | 242 det | 34.6 ms | 1024x768
+2026-04-20 17:24:01,850 [INFO] [13/50] BoWFire_test_BoWFireDataset (157).png    | 89 det | 51.2 ms | 800x450
+2026-04-20 17:24:01,915 [INFO] [14/50] BoWFire_test_BoWFireDataset (217).png    | 86 det | 40.3 ms | 800x533
+2026-04-20 17:24:01,985 [INFO] [15/50] BoWFire_test_BoWFireDataset (194).png    | 195 det | 34.6 ms | 1024x683
+2026-04-20 17:24:02,095 [INFO] [16/50] BoWFire_test_BoWFireDataset (35).png     | 149 det | 35.1 ms | 1365x1024
+2026-04-20 17:24:02,199 [INFO] [17/50] BoWFire_test_BoWFireDataset (204).png    | 152 det | 49.8 ms | 1024x768
+2026-04-20 17:24:02,285 [INFO] [18/50] BoWFire_test_BoWFireDataset (192).png    | 138 det | 37.4 ms | 1024x768
+2026-04-20 17:24:02,362 [INFO] [19/50] BoWFire_test_BoWFireDataset (176).png    | 110 det | 34.7 ms | 1024x680
+2026-04-20 17:24:02,437 [INFO] [20/50] BoWFire_test_BoWFireDataset (179).png    | 101 det | 36.0 ms | 1024x695
+2026-04-20 17:24:02,491 [INFO] [21/50] DFS_valid_middle_(4460).jpg              | 81 det | 33.5 ms | 480x360
+2026-04-20 17:24:02,544 [INFO] [22/50] DFS_valid_middle_(2949).jpg              | 124 det | 34.8 ms | 580x326
+2026-04-20 17:24:02,599 [INFO] [23/50] DFS_valid_middle_(179).jpg               | 180 det | 35.8 ms | 352x288
+2026-04-20 17:24:02,652 [INFO] [24/50] DFS_valid_large_(3020).jpg               | 126 det | 34.6 ms | 183x275
+2026-04-20 17:24:02,706 [INFO] [25/50] DFS_valid_middle_(205).jpg               | 94 det | 37.4 ms | 778x436
+2026-04-20 17:24:02,764 [INFO] [26/50] DFS_valid_middle_(339).jpg               | 114 det | 36.9 ms | 276x183
+2026-04-20 17:24:02,816 [INFO] [27/50] DFS_valid_large_(530).jpg                | 123 det | 37.5 ms | 550x352
+2026-04-20 17:24:02,868 [INFO] [28/50] DFS_valid_other_(265).jpg                | 47 det | 33.7 ms | 400x300
+2026-04-20 17:24:02,916 [INFO] [29/50] DFS_valid_other_(838).jpg                | 106 det | 34.5 ms | 500x355
+2026-04-20 17:24:02,968 [INFO] [30/50] DFS_valid_large_(1042).jpg               | 82 det | 38.0 ms | 240x160
+2026-04-20 17:24:03,016 [INFO] [31/50] DFS_valid_middle_(704).jpg               | 73 det | 34.9 ms | 360x603
+2026-04-20 17:24:03,069 [INFO] [32/50] DFS_valid_other_(25).jpg                 | 126 det | 34.6 ms | 500x633
+2026-04-20 17:24:03,124 [INFO] [33/50] DFS_valid_large_(2501).jpg               | 149 det | 36.6 ms | 500x312
+2026-04-20 17:24:03,191 [INFO] [34/50] DFS_valid_middle_(4438).jpg              | 120 det | 47.0 ms | 480x360
+2026-04-20 17:24:03,248 [INFO] [35/50] DFS_valid_middle_(1805).jpg              | 107 det | 36.9 ms | 1024x682
+2026-04-20 17:24:03,300 [INFO] [36/50] DFS_valid_middle_(1056).jpg              | 112 det | 33.0 ms | 284x177
+2026-04-20 17:24:03,351 [INFO] [37/50] DFS_valid_large_(2475).jpg               | 104 det | 34.1 ms | 550x413
+2026-04-20 17:24:03,405 [INFO] [38/50] DFS_valid_large_(2985).jpg               | 127 det | 35.2 ms | 202x249
+2026-04-20 17:24:03,459 [INFO] [39/50] DFS_valid_middle_(730).jpg               | 101 det | 37.0 ms | 530x300
+2026-04-20 17:24:03,513 [INFO] [40/50] DFS_valid_middle_(1033).jpg              | 97 det | 37.8 ms | 550x417
+2026-04-20 17:24:03,624 [INFO] [41/50] DJI_drone_DJI_0470_W_0091.jpg            | 94 det | 32.7 ms | 3840x2160
+2026-04-20 17:24:03,794 [INFO] [42/50] DJI_drone_DJI_0468_W_0203.jpg            | 111 det | 34.2 ms | 3840x2160
+2026-04-20 17:24:03,907 [INFO] [43/50] DJI_drone_djifly (53)_00015.jpg          | 90 det | 32.5 ms | 1280x720
+2026-04-20 17:24:04,031 [INFO] [44/50] DJI_drone_DJI_0470_W_0001.jpg            | 126 det | 33.6 ms | 3840x2160
+2026-04-20 17:24:04,144 [INFO] [45/50] DJI_drone_djifly (48)_00052.jpg          | 51 det | 33.9 ms | 1280x720
+2026-04-20 17:24:04,215 [INFO] [46/50] DJI_drone_djifly (44)_00064.jpg          | 50 det | 35.8 ms | 1280x720
+2026-04-20 17:24:04,293 [INFO] [47/50] DJI_drone_djifly (33)_00035.jpg          | 109 det | 36.3 ms | 1280x720
+2026-04-20 17:24:04,371 [INFO] [48/50] DJI_drone_DJI_0424_W_0625.jpg            | 79 det | 41.3 ms | 1920x1080
+2026-04-20 17:24:04,437 [INFO] [49/50] DJI_drone_djifly (7)_00111.jpg           | 70 det | 37.2 ms | 960x544
+2026-04-20 17:24:04,490 [INFO] [50/50] DJI_drone_djifly_00261.jpg               | 59 det | 34.7 ms | 960x544
+2026-04-20 17:24:04,496 [INFO] 
+============================================================
+2026-04-20 17:24:04,496 [INFO] [BP-E] 验证完成: 50 张成功 | 0 张失败
+2026-04-20 17:24:04,496 [INFO]        总检测框: 5857 个
+2026-04-20 17:24:04,497 [INFO]        平均推理: 37.4 ms/张
+2026-04-20 17:24:04,497 [INFO]        估计 FPS (纯推理): 26.7
+2026-04-20 17:24:04,497 [INFO]        [BoWFire_test] 20 张 | 2825 框 | 检出率 100%
+2026-04-20 17:24:04,497 [INFO]        [DFS_valid] 20 张 | 2193 框 | 检出率 100%
+2026-04-20 17:24:04,497 [INFO]        [DJI_drone] 10 张 | 839 框 | 检出率 100%
+2026-04-20 17:24:04,607 [INFO] 
+[BP-E] 验证报告: C:\e\workspace\experiment\EI_yolo\step\step2\validation_report.json ✓
+2026-04-20 17:24:04,607 [INFO] [BP-E] 可视化结果: C:\e\workspace\experiment\EI_yolo\step\step2\results/ ✓
+2026-04-20 17:24:04,607 [INFO] ============================================================
+2026-04-20 17:24:04,607 [INFO] STEP 2-2 完成 ✅ — 请查看 results/ 目录中的检测可视化
+2026-04-20 17:24:04,607 [INFO] ============================================================
+2026-04-20 17:46:39,022 [INFO] ============================================================
+2026-04-20 17:46:39,022 [INFO] STEP 2-2: ONNX 推理验证 (50 张图)
+2026-04-20 17:46:39,022 [INFO] ============================================================
+2026-04-20 17:46:39,023 [INFO] [BP-A] 加载 ONNX: C:\e\workspace\experiment\EI_yolo\step\step1\best.onnx
+2026-04-20 17:46:39,224 [INFO] [BP-A] ONNX Runtime 1.24.4 | Provider: CPUExecutionProvider ✓
+2026-04-20 17:46:39,238 [INFO] [BP-A] 输入名称: images, shape: [1, 3, 640, 640]
+2026-04-20 17:46:39,238 [INFO] [BP-A] 输出数量: 6
+2026-04-20 17:46:39,240 [INFO] [BP-A] 待验证图片: 50 张
+2026-04-20 17:46:39,240 [INFO] [BP-B] 开始逐图推理 ...
+2026-04-20 17:46:39,318 [INFO] [01/50] BoWFire_test_BoWFireDataset (32).png     |  3 det | 42.9 ms | 768x1024
+2026-04-20 17:46:39,386 [INFO] [02/50] BoWFire_test_BoWFireDataset (170).png    |  2 det | 39.5 ms | 1024x681
+2026-04-20 17:46:39,453 [INFO] [03/50] BoWFire_test_BoWFireDataset (12).png     |  1 det | 35.4 ms | 1024x733
+2026-04-20 17:46:39,518 [INFO] [04/50] BoWFire_test_BoWFireDataset (187).png    |  1 det | 35.2 ms | 1024x768
+2026-04-20 17:46:39,581 [INFO] [05/50] BoWFire_test_BoWFireDataset (180).png    |  6 det | 34.5 ms | 1024x680
+2026-04-20 17:46:39,633 [INFO] [06/50] BoWFire_test_BoWFireDataset (44).png     |  2 det | 32.6 ms | 634x475
+2026-04-20 17:46:39,693 [INFO] [07/50] BoWFire_test_BoWFireDataset (175).png    |  1 det | 34.3 ms | 1024x802
+2026-04-20 17:46:39,757 [INFO] [08/50] BoWFire_test_BoWFireDataset (4).png      |  1 det | 33.9 ms | 1024x683
+2026-04-20 17:46:39,810 [INFO] [09/50] BoWFire_test_BoWFireDataset (161).png    |  3 det | 33.5 ms | 480x360
+2026-04-20 17:46:39,871 [INFO] [10/50] BoWFire_test_BoWFireDataset (201).png    |  1 det | 36.5 ms | 1024x768
+2026-04-20 17:46:39,946 [INFO] [11/50] BoWFire_test_BoWFireDataset (38).png     |  1 det | 35.0 ms | 1365x1024
+2026-04-20 17:46:40,018 [INFO] [12/50] BoWFire_test_BoWFireDataset (203).png    |  1 det | 41.2 ms | 1024x768
+2026-04-20 17:46:40,072 [INFO] [13/50] BoWFire_test_BoWFireDataset (157).png    |  2 det | 34.4 ms | 800x450
+2026-04-20 17:46:40,124 [INFO] [14/50] BoWFire_test_BoWFireDataset (217).png    |  1 det | 36.2 ms | 800x533
+2026-04-20 17:46:40,197 [INFO] [15/50] BoWFire_test_BoWFireDataset (194).png    |  4 det | 45.5 ms | 1024x683
+2026-04-20 17:46:40,277 [INFO] [16/50] BoWFire_test_BoWFireDataset (35).png     |  1 det | 37.3 ms | 1365x1024
+2026-04-20 17:46:40,342 [INFO] [17/50] BoWFire_test_BoWFireDataset (204).png    |  4 det | 34.4 ms | 1024x768
+2026-04-20 17:46:40,407 [INFO] [18/50] BoWFire_test_BoWFireDataset (192).png    |  1 det | 36.1 ms | 1024x768
+2026-04-20 17:46:40,473 [INFO] [19/50] BoWFire_test_BoWFireDataset (176).png    |  1 det | 36.5 ms | 1024x680
+2026-04-20 17:46:40,539 [INFO] [20/50] BoWFire_test_BoWFireDataset (179).png    |  3 det | 37.6 ms | 1024x695
+2026-04-20 17:46:40,591 [INFO] [21/50] DFS_valid_middle_(4460).jpg              |  1 det | 38.8 ms | 480x360
+2026-04-20 17:46:40,634 [INFO] [22/50] DFS_valid_middle_(2949).jpg              |  3 det | 34.3 ms | 580x326
+2026-04-20 17:46:40,680 [INFO] [23/50] DFS_valid_middle_(179).jpg               |  1 det | 36.4 ms | 352x288
+2026-04-20 17:46:40,724 [INFO] [24/50] DFS_valid_large_(3020).jpg               |  1 det | 37.7 ms | 183x275
+2026-04-20 17:46:40,770 [INFO] [25/50] DFS_valid_middle_(205).jpg               |  3 det | 34.9 ms | 778x436
+2026-04-20 17:46:40,814 [INFO] [26/50] DFS_valid_middle_(339).jpg               |  2 det | 34.4 ms | 276x183
+2026-04-20 17:46:40,858 [INFO] [27/50] DFS_valid_large_(530).jpg                |  1 det | 35.2 ms | 550x352
+2026-04-20 17:46:40,903 [INFO] [28/50] DFS_valid_other_(265).jpg                |  1 det | 37.0 ms | 400x300
+2026-04-20 17:46:40,952 [INFO] [29/50] DFS_valid_other_(838).jpg                |  2 det | 39.8 ms | 500x355
+2026-04-20 17:46:40,998 [INFO] [30/50] DFS_valid_large_(1042).jpg               |  1 det | 35.3 ms | 240x160
+2026-04-20 17:46:41,041 [INFO] [31/50] DFS_valid_middle_(704).jpg               |  1 det | 35.3 ms | 360x603
+2026-04-20 17:46:41,087 [INFO] [32/50] DFS_valid_other_(25).jpg                 |  0 det | 36.8 ms | 500x633
+2026-04-20 17:46:41,137 [INFO] [33/50] DFS_valid_large_(2501).jpg               |  3 det | 39.7 ms | 500x312
+2026-04-20 17:46:41,208 [INFO] [34/50] DFS_valid_middle_(4438).jpg              |  2 det | 60.7 ms | 480x360
+2026-04-20 17:46:41,258 [INFO] [35/50] DFS_valid_middle_(1805).jpg              |  1 det | 37.7 ms | 1024x682
+2026-04-20 17:46:41,317 [INFO] [36/50] DFS_valid_middle_(1056).jpg              |  2 det | 47.1 ms | 284x177
+2026-04-20 17:46:41,367 [INFO] [37/50] DFS_valid_large_(2475).jpg               |  1 det | 38.9 ms | 550x413
+2026-04-20 17:46:41,410 [INFO] [38/50] DFS_valid_large_(2985).jpg               |  2 det | 34.2 ms | 202x249
+2026-04-20 17:46:41,455 [INFO] [39/50] DFS_valid_middle_(730).jpg               |  1 det | 36.9 ms | 530x300
+2026-04-20 17:46:41,497 [INFO] [40/50] DFS_valid_middle_(1033).jpg              |  1 det | 34.1 ms | 550x417
+2026-04-20 17:46:41,603 [INFO] [41/50] DJI_drone_DJI_0470_W_0091.jpg            |  0 det | 32.5 ms | 3840x2160
+2026-04-20 17:46:41,763 [INFO] [42/50] DJI_drone_DJI_0468_W_0203.jpg            |  1 det | 34.1 ms | 3840x2160
+2026-04-20 17:46:41,871 [INFO] [43/50] DJI_drone_djifly (53)_00015.jpg          |  1 det | 34.3 ms | 1280x720
+2026-04-20 17:46:41,983 [INFO] [44/50] DJI_drone_DJI_0470_W_0001.jpg            |  1 det | 32.4 ms | 3840x2160
+2026-04-20 17:46:42,091 [INFO] [45/50] DJI_drone_djifly (48)_00052.jpg          |  1 det | 37.1 ms | 1280x720
+2026-04-20 17:46:42,151 [INFO] [46/50] DJI_drone_djifly (44)_00064.jpg          |  1 det | 35.2 ms | 1280x720
+2026-04-20 17:46:42,210 [INFO] [47/50] DJI_drone_djifly (33)_00035.jpg          |  0 det | 36.3 ms | 1280x720
+2026-04-20 17:46:42,276 [INFO] [48/50] DJI_drone_DJI_0424_W_0625.jpg            |  1 det | 38.7 ms | 1920x1080
+2026-04-20 17:46:42,334 [INFO] [49/50] DJI_drone_djifly (7)_00111.jpg           |  1 det | 35.6 ms | 960x544
+2026-04-20 17:46:42,376 [INFO] [50/50] DJI_drone_djifly_00261.jpg               |  1 det | 30.9 ms | 960x544
+2026-04-20 17:46:42,380 [INFO] 
+============================================================
+2026-04-20 17:46:42,380 [INFO] [BP-E] 验证完成: 50 张成功 | 0 张失败
+2026-04-20 17:46:42,380 [INFO]        总检测框: 78 个
+2026-04-20 17:46:42,380 [INFO]        平均推理: 36.9 ms/张
+2026-04-20 17:46:42,380 [INFO]        估计 FPS (纯推理): 27.1
+2026-04-20 17:46:42,380 [INFO]        [BoWFire_test] 20 张 | 40 框 | 检出率 100%
+2026-04-20 17:46:42,380 [INFO]        [DFS_valid] 20 张 | 30 框 | 检出率 95%
+2026-04-20 17:46:42,380 [INFO]        [DJI_drone] 10 张 | 8 框 | 检出率 80%
+2026-04-20 17:46:42,384 [INFO] 
+[BP-E] 验证报告: C:\e\workspace\experiment\EI_yolo\step\step2\validation_report.json ✓
+2026-04-20 17:46:42,385 [INFO] [BP-E] 可视化结果: C:\e\workspace\experiment\EI_yolo\step\step2\results/ ✓
+2026-04-20 17:46:42,385 [INFO] ============================================================
+2026-04-20 17:46:42,385 [INFO] STEP 2-2 完成 ✅ — 请查看 results/ 目录中的检测可视化
+2026-04-20 17:46:42,386 [INFO] ============================================================

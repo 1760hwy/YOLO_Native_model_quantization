@@ -1,0 +1,162 @@
+{
+  "model_path": "C:\\e\\workspace\\experiment\\EI_yolo\\step\\step1\\best.onnx",
+  "rdkx5_arch": "bayes-e",
+  "oe_version": "v1.2.8",
+  "summary": {
+    "total_unique_ops": 23,
+    "BPU_native": 20,
+    "BPU_special_config": 2,
+    "CPU_fallback": 1,
+    "unsupported": 0,
+    "unknown": 0
+  },
+  "compatibility": {
+    "Add": {
+      "status": "BPU",
+      "note": "完全支持，包含 residual 连接场景",
+      "workaround": null,
+      "count": 19
+    },
+    "Cast": {
+      "status": "BPU",
+      "note": "常见类型转换支持（float32/int32/int64/bool）",
+      "workaround": null,
+      "count": 2
+    },
+    "Concat": {
+      "status": "BPU",
+      "note": "完全支持，多 tensor 拼接",
+      "workaround": null,
+      "count": 28
+    },
+    "Constant": {
+      "status": "BPU",
+      "note": "常量折叠，不占 BPU 算力",
+      "workaround": null,
+      "count": 54
+    },
+    "ConstantOfShape": {
+      "status": "BPU",
+      "note": "静态 shape 时支持",
+      "workaround": null,
+      "count": 2
+    },
+    "Conv": {
+      "status": "BPU",
+      "note": "完全支持，标准二维卷积。kernel size/stride/dilation/group 均支持",
+      "workaround": null,
+      "count": 112
+    },
+    "Gather": {
+      "status": "BPU_partial",
+      "note": "索引为常量时 BPU 支持；动态索引落 CPU",
+      "workaround": "将动态 gather 移至后处理，或改用静态 slice",
+      "count": 4
+    },
+    "Identity": {
+      "status": "BPU",
+      "note": "恒等映射，通常被常量折叠消除",
+      "workaround": null,
+      "count": 8
+    },
+    "InstanceNormalization": {
+      "status": "BPU",
+      "note": "完全支持",
+      "workaround": null,
+      "count": 9
+    },
+    "MatMul": {
+      "status": "BPU",
+      "note": "矩阵乘法，二维场景完全支持；高维场景建议验证",
+      "workaround": null,
+      "count": 2
+    },
+    "MaxPool": {
+      "status": "BPU",
+      "note": "完全支持，kernel≤11×11 最优",
+      "workaround": null,
+      "count": 4
+    },
+    "Mul": {
+      "status": "BPU",
+      "note": "完全支持",
+      "workaround": null,
+      "count": 66
+    },
+    "Pad": {
+      "status": "BPU",
+      "note": "完全支持（constant/reflect/edge padding）",
+      "workaround": null,
+      "count": 2
+    },
+    "Relu": {
+      "status": "BPU",
+      "note": "完全支持",
+      "workaround": null,
+      "count": 35
+    },
+    "Reshape": {
+      "status": "BPU",
+      "note": "完全支持（静态 shape）",
+      "workaround": null,
+      "count": 25
+    },
+    "Resize": {
+      "status": "BPU",
+      "note": "支持 nearest/bilinear 插值；静态 scale/size；不支持 cubic",
+      "workaround": "如使用 bicubic，改为 bilinear",
+      "count": 2
+    },
+    "Shape": {
+      "status": "CPU",
+      "note": "Shape 算子输出张量形状，通常为常量化后消除；若残留则落 CPU",
+      "workaround": "确保使用静态 shape 导出，shape 节点会被常量折叠消除",
+      "count": 13
+    },
+    "Sigmoid": {
+      "status": "BPU",
+      "note": "完全支持",
+      "workaround": null,
+      "count": 52
+    },
+    "Slice": {
+      "status": "BPU",
+      "note": "静态 slice 完全支持；动态 slice 可能落 CPU",
+      "workaround": "确保 start/end/axes/step 为常量",
+      "count": 2
+    },
+    "Softmax": {
+      "status": "BPU_int16",
+      "note": "⚠️ 默认 INT8 量化时 Softmax 落 CPU，导致子图分裂 FPS 暴跌。需在 hb_mapper YAML 的 node_info 中强制为 BPU + INT16",
+      "workaround": "在 hb_mapper YAML 中添加:\n  node_info:\n    \"<Softmax节点名>\": {ON: BPU, InputType: int16, OutputType: int16}\n节点名可由 step 1-3 的 operators.json 查出，或用 hb_mapper checker 确认",
+      "count": 1
+    },
+    "Split": {
+      "status": "BPU",
+      "note": "完全支持",
+      "workaround": null,
+      "count": 6
+    },
+    "Transpose": {
+      "status": "BPU",
+      "note": "完全支持",
+      "workaround": null,
+      "count": 10
+    },
+    "Unsqueeze": {
+      "status": "BPU",
+      "note": "完全支持",
+      "workaround": null,
+      "count": 10
+    }
+  },
+  "critical_actions": [
+    {
+      "priority": "HIGH",
+      "op": "Softmax",
+      "node_name": "/model.11/m/m.0/attn/Softmax",
+      "action": "在 hb_mapper YAML 的 node_info 中配置 BPU + int16",
+      "yaml_snippet": "node_info:\n  \"/model.11/m/m.0/attn/Softmax\":\n    ON: BPU\n    InputType: int16\n    OutputType: int16"
+    }
+  ]
+}

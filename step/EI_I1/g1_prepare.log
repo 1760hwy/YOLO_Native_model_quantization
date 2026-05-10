@@ -1,0 +1,9 @@
+2026-04-22 19:02:23,822 [INFO] ============================================================
+2026-04-22 19:02:23,822 [INFO] EI_I1 G1: 双重归一化校准数据（失配类型①）
+2026-04-22 19:02:23,822 [INFO]   写入值域 [0,1] float32  +  YAML scale_value=1/255  →  等效 /255²
+2026-04-22 19:02:23,823 [INFO]   src=C:\e\workspace\experiment\EI_yolo\BDF-18K  dst=C:\e\workspace\experiment\EI_yolo\step\EI_I1\calibration_g1_wrong_norm_f32  num=100
+2026-04-22 19:02:23,823 [INFO] ============================================================
+2026-04-22 19:02:27,117 [INFO] 找到 947 张有火图片
+2026-04-22 19:02:27,125 [INFO] 采样 100 张
+2026-04-22 19:02:34,101 [INFO] 完成: 100 张写入 C:\e\workspace\experiment\EI_yolo\step\EI_I1\calibration_g1_wrong_norm_f32
+2026-04-22 19:02:34,101 [INFO] 预期现象: cls logits 均值 < -30，sigmoid 后置信度 < 1e-6，0 检测框
